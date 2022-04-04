@@ -48,7 +48,7 @@
             <div class="container">
                 <nav class="navigation-2">
                     <ul class="grid">
-                        <li><a href="#">Sites</a></li>
+                        <li><a onclick="openClose()" href="#">Sites</a></li>
                         <li><a href="#">Redes Sociais</a></li>
                         <li><a href="#">E-commerce</a></li>
                         <li><a href="#">Mídia Online</a></li>
@@ -56,11 +56,18 @@
                     </ul>
                         <div id="pesquisar">
                             <input type="search" name="buscar" id="buscar" placeholder="Digite sua pesquisa">
-                            <i class="icon-search"></i>
                         </div>  
                 </nav>
+                <!--Menu Site-->
+
+                <div class="menu-sites">
+                    <div>
+                        
+                    </div>
+
+                </div>
             </div>
-            <img id="banner" src="/assets/banner.png" alt="banner">
+            <img id="banner" src="./assets/banner.png" alt="Banner">
         </section>
 
         <section class="container">  
@@ -74,19 +81,19 @@
                 <div class="divisor-1"></div>
 
                 <div class="carrossel">
-                    <div>
+                    <div class="card-1">
                         <i class="icon-alt_route_black_24dp"></i>
                         <h3 class="carrossel-title">Titulo</h3>
                         <p>Dolor sit amet, consetetur sadipscing elitr, sed</p>
                     </div>
 
-                    <div>
+                    <div class="card-2">
                         <i class="icon-headset_mic_black_24dp"></i>
                         <h3 class="carrossel-title">Serviço</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                     </div>
 
-                    <div>
+                    <div class="card-3">
                         <i class="icon-inventory_black_24dp"></i>
                         <h3 class="carrossel-title">Exemplo</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
@@ -109,7 +116,7 @@
     <footer>
 
     </footer>
-
+<script src="funcoes.js"></script>
 </body>
 
 </html>
