@@ -1,0 +1,205 @@
+@font-face {
+    font-family: "ArcherPro";
+    src: url("./assets/ArcherPro-Fonts/ArcherPro\ Book.otf") format('opentype');
+}
+ 
+ /* Reset: */
+
+* {  
+    border: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+.grid {
+    display: grid;
+    grid-auto-flow: column;
+    gap: 3rem;
+}
+
+li {
+    list-style: none;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+:root {
+
+    /* Colors: */
+    --unnamed-color-283137: #283137;
+    --unnamed-color-033244: #033244;
+    --unnamed-color-005271: #005271;
+    --unnamed-color-0089bc: #0089BC;
+    --unnamed-color-00aeef: #00AEEF;
+    --unnamed-color-71d8ff: #71D8FF;
+    --unnamed-color-b2eaff: #B2EAFF;
+    --unnamed-color-e2f7ff: #E2F7FF;
+}
+
+/* Corpo: */
+
+
+body {
+    font-size: 1.6rem;
+    width: 192rem;
+    height: 100vh;
+    font-family: ArcherPro, sans-serif;
+    
+}
+
+
+.container {
+    max-width: 120rem;
+    margin: auto;
+}
+.divisao-1 {
+    height: 0.3rem;
+    background-color: var(--unnamed-color-71d8ff);
+}
+
+/* Cabeçalho: */
+
+#logo {
+    margin-right: 6rem;
+}
+
+.navigation-1{
+    height: 6rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+#menu-esquerdo, #menu-direito {
+    display: flex;
+    align-items: center;
+}
+
+#menu-option ul li a{
+    color: #2C3A2F;
+    font-size: 1.4rem;
+}
+
+/*CONTEUDO*/
+
+.section-1 {
+    background-color: var(--unnamed-color-033244);
+    border-top: 0.3rem solid var(--unnamed-color-71d8ff);
+    border-bottom: 0.3rem solid var(--unnamed-color-71d8ff);
+}
+.navigation-2{    
+    height: 6.9rem;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.navigation-2 ul li a {
+    text-transform: uppercase;
+    color: white;
+    font-size: 1.4rem;
+    font-weight: normal;
+    padding: 0.4rem 0;
+}
+
+#buscar {
+    width: 23.8rem;
+    height: 4.2rem;
+    border: 1px solid var(--unnamed-color-00aeef);
+    outline: none;
+    border-radius: 0.8rem;
+    background-color: var(--unnamed-color-033244);
+    color: var(--unnamed-color-b2eaff);
+    font-size: 1.4rem;
+    padding: 1.2rem 1.5rem;
+
+}
+
+input#buscar::placeholder {
+    color: var(--unnamed-color-b2eaff);
+    opacity: .5;
+}
+
+div#pesquisar{
+    position: relative;
+}
+div#pesquisar i{
+    position: absolute;
+    bottom: 0.8rem;
+    right: 1.4rem;
+    cursor: pointer; 
+}
+
+#section-2{
+    margin: 7.5rem auto 7rem auto;
+    display: flex;
+    align-items: center;
+    
+}
+#section-2 .section-2-lado-esquerdo h2 {
+    font-size: 3.2rem;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 900;
+}
+#section-2 .section-2-lado-esquerdo a{
+    display: inline-block;
+    padding: 0.9rem 4rem;
+    margin-top: 4rem;
+    height: 3.6rem;
+    background-color: var(--unnamed-color-71d8ff);
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 900;
+    color: var(--unnamed-color-033244);
+}
+#section-2 .section-2-lado-esquerdo h2 span {
+    color: var(--unnamed-color-00aeef);
+}
+.section-2-lado-esquerdo{
+    white-space: nowrap;
+    
+}
+
+.carrossel{
+    display: grid;
+    grid-auto-flow: column;
+    gap: 2.4rem;
+}
+.carrossel div {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    padding: 1.7rem;
+}
+
+.carrossel div i{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.carrossel-title{
+    text-align: center;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 900;
+    color: #101912;
+}
+
+.carrossel div p {
+    text-align: center;
+    font-family: 'Roboto Slab', serif;
+    color: #101912;
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+.divisor-1 {
+    margin: 0 3rem;
+    height: 36.4rem;
+    width: 1px;
+    background-color: var(--unnamed-color-71d8ff);
+}
+

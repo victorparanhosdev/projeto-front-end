@@ -1,0 +1,57 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?es4urr');
+  src:  url('fonts/icomoon.eot?es4urr#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?es4urr') format('truetype'),
+    url('fonts/icomoon.woff?es4urr') format('woff'),
+    url('fonts/icomoon.svg?es4urr#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-account_circle_black_24dp:before {
+  content: "\e901";
+  color: #00aeef;
+  font-size: 3.2rem;
+}
+.icon-alt_route_black_24dp:before {
+  content: "\e902";
+  color: #005271;
+  font-size: 17rem;
+}
+.icon-headset_mic_black_24dp:before {
+  content: "\e903";
+  color: #005271;
+  font-size: 17rem;
+}
+.icon-inventory_black_24dp:before {
+  content: "\e904";
+  color: #005271;
+  font-size: 17rem;
+}
+.icon-shopping_cart_black_24dp:before {
+  content: "\e905";
+  color: #00aeef;
+  font-size: 3.2rem;
+}
+.icon-search:before {
+  content: "\e986";
+  font-size: 2.4rem;
+  color: var(--unnamed-color-e2f7ff);
+}
