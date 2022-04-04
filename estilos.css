@@ -60,6 +60,24 @@ body {
     margin: 0 auto;
 }
 
+.icone-seta-down {
+    background-color: black;
+    height: 1rem;
+    width: 1rem;
+    clip-path: polygon(50% 100%, 0 0, 100% 0);
+    margin-left: 1.2rem;
+}
+
+.icone-seta-up {
+    background-color: black;
+    height: 1rem;
+    width: 1rem;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    margin-left: 1.2rem;
+}
+
+
+
 
 /* Cabeçalho: */
 
@@ -81,6 +99,18 @@ body {
 #menu-option ul li a{
     color: #2C3A2F;
     font-size: 1.4rem;
+   
+}
+#menu-direito div {
+    display: flex;
+    align-items: center;
+}
+
+.dia-a-dia-title{
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: bold;
+    
 }
 
 /*CONTEUDO*/
@@ -97,7 +127,7 @@ body {
 }
 
 .navigation-2{  
-
+    flex-wrap: wrap;
     height: 6.9rem;
     align-items: center;
     display: flex;
@@ -110,35 +140,15 @@ body {
     font-size: 1.4rem;
     font-weight: normal;
     padding: 0.4rem 0;
+    white-space: nowrap;
 }
 
 .section-1 div.container {
     position: relative;
 }
 
-/*MENU SITE ATIVO */
-
-.menu-sites{
-    display: none;
-}
-
-.menu-sites.active {
-    display: block;
-    position: absolute;
-    height: 27.9rem;
-    width: 120rem;
-    max-width: 100%;
-    border-top: 0.3rem solid var(--unnamed-color-71d8ff);
-    background-color: #FFFFFF;
-    z-index: 1;
-}
-
-/*------------------- */
-
-
-
 #buscar {
-    width: 23.8rem;
+    max-width: 23.8rem;
     height: 4.2rem;
     border: 1px solid var(--unnamed-color-00aeef);
     outline: none;
@@ -153,6 +163,82 @@ input#buscar::placeholder {
     color: var(--unnamed-color-b2eaff);
     opacity: .5;
 }
+/*MENU SITE ATIVO */
+
+.menu-sites{
+    display: none;
+}
+
+.menu-sites.active {
+    font-family: 'Sora', sans-serif;
+    display: block;
+    position: absolute;
+    height: 27.9rem;
+    width: 120rem;
+    max-width: 100%;
+    border-top: 0.3rem solid var(--unnamed-color-71d8ff);
+    background-color: #FFFFFF;
+    z-index: 1;
+   
+}
+
+#caixa-menu-sites {
+    max-width: 93.3rem;
+    width: 98%;
+    height: 19.2rem;
+    margin: 3rem auto;
+    display: flex;
+  
+}
+
+#caixa-menu-sites div h2 {
+    font-size: 1.8rem;
+    color: var(--unnamed-color-005271);
+    font-weight: 800;
+    position: relative;
+    margin-bottom: 2.4rem;
+}
+
+#caixa-menu-sites div h2::after{
+    content: '';
+    position: absolute;
+    bottom: -1.2rem;
+    left: 0px;
+    background-color: #C4C4C9;
+    width: 6.3rem;
+    height: 1px;
+}
+
+#caixa-menu-sites .div-1 ul li a {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: var(--unnamed-color-033244);
+    display: block;
+    margin-top: 0.8rem;
+}
+
+#caixa-menu-sites div.div-1 {
+    max-width: 9.2rem;
+    margin: 0 auto;
+}
+
+
+.div-2, .div-3, .div-4 {
+    max-width: 13rem;
+    margin: 0 auto;
+   
+}
+
+.div-2 ul li a, .div-3 ul li a, .div-4 ul li a {
+    font-weight: normal;
+    font-size: 1.4rem;
+    display: block;
+    margin-top: 0.8rem;
+    white-space: nowrap;
+}
+
+/*------------------- */
+
 
 
 
