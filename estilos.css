@@ -125,7 +125,6 @@ body {
 .menu-sites.active {
     display: block;
     position: absolute;
-    top: 6.9rem;
     height: 27.9rem;
     width: 120rem;
     max-width: 100%;
