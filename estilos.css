@@ -287,7 +287,7 @@ input#buscar::placeholder {
 }
 #section-2 .primeira-div {
     background-color: var(--unnamed-color-00aeef);
-    height: 20px;
+    height: 1px;
 }
 
 .section-2-initial {
@@ -439,7 +439,6 @@ input#buscar::placeholder {
     width: 100%;
     height: 40.2rem;
     background: url("./assets/imagens/bg\ time.png") no-repeat 100%;
-    background-size: contain;
     display: inline-flex;
     align-items: center;
     justify-content: left;
@@ -501,29 +500,122 @@ input#buscar::placeholder {
     color: var(--unnamed-color-0089bc);
     font-size: 2rem;
     font-weight: 500;
- }
-
- #section-5 .secao-5-cards {
-        display: grid;
-        grid-auto-flow: column;
-        gap: 2.4rem;
- }
- #section-5 .secao-5-cards div {
-     height: 40rem;
-     max-width: 40rem;
-     background-color: rgb(136, 131, 131);
- }
-
- .secao-5-card-1 {
-     background: url("./assets/imagens/Imagem\ card\ serviço.png") no-repeat;
-     background-size: contain;
- }
- .secao-5-card-2 {
-    background: url("./assets/imagens/Imagem\ card\ serviço-1.png") no-repeat;
-    background-size: contain;
 }
+
+#section-5 .secao-5-cards {
+    display: grid;
+    grid-auto-flow: column;
+    gap: 2.4rem;
+    width: 100%;
+    height: 46.2rem;
+    
+}
+
+.secao-5-card-1 {
+    background: url("./assets/imagens/Imagem\ card\ serviço.png") no-repeat;
+    max-width: 42.4rem;
+    background-position: top center;
+    height: 100%;
+    position: relative;
+}
+.secao-5-card-2 {
+    background: url("./assets/imagens/Imagem\ card\ serviço-1.png") no-repeat;
+    max-width: 42.4rem;
+    background-position: top center;
+    height: 100%;
+    position: relative;
+
+}
+
 .secao-5-card-3 {
     background: url("./assets/imagens/Imagem\ card\ serviço-2.png") no-repeat;
-    background-size: contain;
+    max-width: 42.4rem;
+    background-position: top center;
+    height: 100%;
+    position: relative;
+}
+
+.secao-5-titulo {
+    font-size: 2rem;
+    font-weight: 900;
+    color: #FFFFFF;
+    white-space: nowrap;
+    margin-bottom: 1.6rem;
     
+}
+
+.secao-5-paragrafo {
+    color: var(--unnamed-color-e2f7ff);
+    font-size: 1.6rem;
+    font-weight: 200;
+    margin-bottom: 4rem;
+    
+}
+.secao-5-botao {
+    color: var(--unnamed-color-00aeef);
+    font-size: 1.4rem;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.secao-5-txt {
+    background-color: var(--unnamed-color-283137);
+    padding: 2.4rem 1rem 3.5rem 2.5rem;
+    width: 100%;
+    height: 21.3rem;
+    position: absolute;
+    bottom: 0;  
+}
+#section-6 {
+    margin: 7.6rem auto 8rem;
+    background: url("./assets/imagens/BG\ CONHEÇA.png") no-repeat 100%;
+    display: flex;
+    align-items: center;
+    height: 40rem;
+}
+
+#section-6 div {
+    margin: auto 10rem;
+    max-width: 64.6rem;
+    width: 100%;
+    height: 24.8rem;
+    padding-left: 3.5rem;
+    font-family: 'Roboto Slab', serif;
+
+}
+
+#section-6 div h3{
+    color: #FFFFFF;
+    font-size: 3.2rem;
+    font-weight: 900;
+    margin-bottom: 1.6rem;
+    width: 55.1rem;
+}
+
+#section-6 div p {
+    color: var(--unnamed-color-71d8ff);
+    font-size: 2rem;
+    font-weight: 500;
+    margin-right: 7.8rem;
+    margin-bottom: 4rem;
+    width: 60.7rem;
+
+}
+#section-6 div a {
+    width: 17.6rem;
+    height: 3.9rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+    font-weight: 900;
+    color: #FFFFFF;
+    background-color: var(--unnamed-color-0089bc);
+}
+
+#section-7 {
+    margin: 8rem auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
