@@ -1,4 +1,4 @@
-const MenuSite = document.querySelectorAll('.menu-sites')
+const MenuSite = document.querySelectorAll('.section-1')
 
 
 function openClose() {
