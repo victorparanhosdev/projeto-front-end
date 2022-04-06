@@ -21,6 +21,11 @@
 a {
     text-decoration: none;
     color: black;
+    transition: opacity 0.2s;
+
+}
+a:hover {
+    opacity: 0.8;
 }
 .grid {
     display: grid;
@@ -49,6 +54,7 @@ html {
     --unnamed-color-b2eaff: #B2EAFF;
     --unnamed-color-e2f7ff: #E2F7FF;
 }
+
 
 /* Corpo: */
 
@@ -339,6 +345,7 @@ input#buscar::placeholder {
     gap: 2.4rem;
 }
 
+
 .card-1, .card-2, .card-3 {
     box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.3);
     border-radius: 3px;
@@ -382,12 +389,10 @@ input#buscar::placeholder {
     width: 100%;
     background-color: #F3F3F3;
     height: 17.2rem;
-    display: grid;
-    grid-auto-flow: column;
-    gap: 2rem;
-    place-items: center;
     padding: 2rem;
 }
+
+
 
 #produtos-nerd-web div {
     max-width: 12.2rem;
@@ -835,4 +840,12 @@ footer {
 
 .rodape-down-direito ul li:hover {
     transform: translateY(0%);
+}
+
+@media (max-width: 1024px) {
+    
+    
+
+
+    
 }

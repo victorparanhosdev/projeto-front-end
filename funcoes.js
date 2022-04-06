@@ -10,3 +10,28 @@ function openClose() {
       }
 }
 
+
+const swiper = new Swiper('.swiper', {
+    
+  slidesPerView: 1,
+  pagination: {
+    el: '.swiper-pagination'
+    
+
+  },
+  mousewheel: true,
+  keyboard: true
+});
+
+
+const SWW = new Swiper('.swipeer', {
+    
+  slidesPerView: 5,
+  pagination: {
+    el: '.swiper-paginatioon'
+    
+
+  },
+  mousewheel: true,
+  keyboard: true
+});
