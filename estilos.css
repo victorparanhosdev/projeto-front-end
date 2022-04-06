@@ -34,6 +34,7 @@ li {
 
 html {
     font-size: 62.5%;
+    /*scroll-behavior: smooth;*/
 }
 
 :root {
@@ -616,6 +617,222 @@ input#buscar::placeholder {
 #section-7 {
     margin: 8rem auto;
     display: flex;
+    color: #2C3A2F;
+    font-family: 'Roboto Slab', serif;
+    height: 29.2rem;
+    width: 100%;
+}
+
+.section-7-esquerdo{
+    width: 53.6rem;
+    height: 23.1rem;
+    margin: auto;
+
+}
+
+.section-7-titulo {
+    font-size: 1.6rem;
+    font-weight: 900; 
+    margin-bottom: 2.5rem;  
+}
+.section-7-paragrafo {
+    font-size: 1.5rem;
+}
+
+.section-7-direito {
+    display: grid;
+    grid-auto-flow: column;
+    gap: 2.4rem;
+    margin: auto;
+
+}
+
+.section-7-img-1 {
+    background: url("./assets/imagens/selo-wgc.png") no-repeat;
+    clip-path: circle();
+    height: 16rem;
+    width: 16rem;
+    border-radius: 50%;
+    border: 0.1rem solid;
+    background-size: cover;
+}
+
+.section-7-img-2 {
+    background: url("./assets/imagens/principle-2.png") no-repeat;
+    clip-path: circle();
+    height: 16rem;
+    width: 16rem;
+    border-radius: 50%;
+    border: 0.1rem solid;
+    background-size: cover;
+}
+
+
+.section-7-img-3 {
+    background: url("./assets/imagens/principle-3.png") no-repeat;
+    background-size: cover;
+    clip-path: circle();
+    height: 16rem;
+    width: 16rem;
+    border-radius: 50%;
+    border: 0.1rem solid;
+}
+
+#section-8 {
+    margin-bottom: 10.5rem;
+    width: 100%;
+    height: 26.2rem;
+    background-color: #F3F3F3;
+    padding: 4.5rem 0 4.2rem 11.2rem;
+    display: flex;
+    font-family: 'Roboto Slab', serif;
+}
+.section-8-esquerdo {
+    width: 31.2rem;
+    height: 17.5rem;
+   
+}
+#section-8 .section-8-esquerdo h2 {
+    color: var(--unnamed-color-033244);
+    font-size: 3.2rem;
+    margin-bottom: 1.6rem;
+    font-weight: 900;
+}
+#section-8 .section-8-esquerdo p {
+    color: var(--unnamed-color-0089bc);
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.section-8-direito {
+    margin: auto;
+
+}
+
+input#nome {
+    width: 67.2rem;
+    height: 4.4rem;
+    margin-bottom: 1.5rem;
+    display: block;
+    padding: 1.2rem 0 1.2rem 2.4rem ;
+    outline: none;
+    border: 1px solid #005271;
+    background-color: transparent;
+    font-size: 1.6rem;
+}
+
+input#email {
+    width: 67.2rem;
+    height: 4.4rem;
+    margin-bottom: 2.1rem;
+    display: block;
+    padding: 1.2rem 0 1.2rem 2.4rem;
+    outline: none;
+    border: 1px solid #005271;
+    background-color: transparent;
+    font-size: 1.6rem;
+}
+#nome::placeholder, #email::placeholder {
+    color: var(--unnamed-color-005271);
+    font-size: 1.6rem;
+    font: 300;
+    font-family: 'Roboto Slab', serif;
+    
+}
+
+.section-8-cadastrar {
+    display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
+    width: 13.5rem;
+    height: 4.5rem;
+
+}
+
+/* RODAPÉ */
+
+footer {
+    border-top: 0.3rem solid var(--unnamed-color-0089bc);
+    background-color: var(--unnamed-color-283137);
+    height: 46.1rem;
+    font-family: 'Roboto Slab', serif;
+}
+#rodape {
+    margin-top: 4.3rem;
+
+}
+.rodape-up{ 
+    height: 32.7rem;
+    display: flex;
+    justify-content: space-between;
+}
+#rodape-logo{
+    display: block;
+    width: 8.8rem;
+    height: 3.4rem;
+}
+.rodape-menu{
+    display: grid;
+    grid-auto-flow: column;
+    gap: 7.5rem;
+
+}
+.rodape-titulo {
+    font-size: 1.8rem;
+    color: var(--unnamed-color-e2f7ff);
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+}
+.rodape-menu div a{
+    color: var(--unnamed-color-00aeef);
+    font-size: 1.4rem;
+    font-style: 500;
+    display: block;
+    margin-bottom: 1rem;
+}
+.rodape-up div p {
+    color: var(--unnamed-color-b2eaff);
+    font-size: 1.4rem;
+    font-style: 500;
+    line-height: 2.2rem;
+
+}
+
+.rodape-down{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    
+}
+.rodape-down::before{
+    content: "";
+    width: 100%;
+    height: 0.2rem;
+    background-color: #E1E1E1;
+    position: absolute;
+    top: -2rem;
+}
+.rodape-down-esquerdo p{
+    color: #E1E1E1;
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+.rodape-down-direito p{
+    color: var(--unnamed-color-71d8ff);
+    margin-bottom: 1.5rem;
+}
+.rodape-down-direito ul {
+   display: grid;
+   grid-auto-flow: column;
+}
+
+.rodape-down-direito ul li {
+    transform: translateY(20%);
+    transition: transform 0.4s;
+}
+
+.rodape-down-direito ul li:hover {
+    transform: translateY(0%);
 }
