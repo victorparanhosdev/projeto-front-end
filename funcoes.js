@@ -1,5 +1,18 @@
 
 const MenuSite = document.querySelectorAll('.section-1')
+const menuHamburguer = document.querySelectorAll(".navigation-1")
+
+
+
+
+function clicar() {
+  for (let item of menuHamburguer){
+      item.classList.toggle('active')
+
+}
+  
+
+}
 
 
 function openClose() {
@@ -12,26 +25,69 @@ function openClose() {
 
 
 const swiper = new Swiper('.swiper', {
-    
-  slidesPerView: 1,
-  pagination: {
-    el: '.swiper-pagination'
-    
+  
+  mousewheel: true,
+  keyboard: false,
+
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+
+  breakpoints: {
+  
+    320: {
+      slidesPerView: 1,
+    },
+
+    768: {
+      slidesPerView: 1
+
+    },
+
+    1024: {
+      slidesPerView: 2,
+    },
+    1440: {
+      slidesPerView: 3,
+    },
+
 
   },
+ 
+
+});
+
+const swiperP = new Swiper('.swipeer', {
+  
   mousewheel: true,
-  keyboard: true
+  keyboard: true,
+
+  pagination: {
+    el: ".swiper-pagination",
+    type: "progressbar",
+  },
+
+  breakpoints: {
+  
+    320: {
+      slidesPerView: 2,
+    },
+    768: {
+      slidesPerView: 4,
+    },
+    1024: {
+      slidesPerView: 7,
+    },
+    1440: {
+      slidesPerView: 11,
+    },
+
+
+  },
+ 
+
 });
 
 
-const SWW = new Swiper('.swipeer', {
-    
-  slidesPerView: 5,
-  pagination: {
-    el: '.swiper-paginatioon'
-    
-
-  },
-  mousewheel: true,
-  keyboard: true
-});
+console.log(menuHamburguer)

@@ -1,446 +1,461 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
-    />
-    <link rel="stylesheet" href="estilos.css" />
-    <link rel="stylesheet" href="./assets/icomoon/style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600;700;800&display=swap"
-      rel="stylesheet"
-    />
 
-    <title>NerdWeb</title>
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="estilos.css" />
+  <link rel="stylesheet" href="./assets/icomoon/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600;700;800&display=swap"
+    rel="stylesheet" />
 
-  <body>
-    <!--CABEÇALHO -->
-    <header>
-      <!--MENU DESKTOP -->
-      <nav class="navigation-1 container">
-        <div id="menu-esquerdo">
-          <img id="logo" src="./assets/imagens/logo.png" alt="Logo-Marca" />
-          <div id="menu-option">
-            <ul class="grid">
-              <li><a href="#nerdweb">Nerdweb</a></li>
-              <li><a href="#servicos">Serviços</a></li>
-              <li><a href="#blog">Blog</a></li>
-              <li><a href="#atendimento">Atendimento</a></li>
-            </ul>
-          </div>
+  <title>NerdWeb</title>
+</head>
+
+<body>
+  <!--CABEÇALHO -->
+  <header class="header">
+    <!--MENU DESKTOP -->
+    <nav class="navigation-1 active container">
+      <div class="menu-toggle"></div>
+      <div id="menu-esquerdo">
+            <i onclick="clicar()" class="toggle icon-times-solid-close"></i>
+            <i onclick="clicar()" class="toggle icon-menu-bars-solid"></i>        
+        <img id="logo" src="./assets/imagens/logo.png" alt="Logo-Marca"/>
+        <div id="menu-option">
+          <ul class="grid menu-toggle">
+            <li><a href="#nerdweb">Nerdweb</a></li>
+            <li><a href="#servicos">Serviços</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#atendimento">Atendimento</a></li>
+          </ul>
         </div>
-        <div class="grid" id="menu-direito">
-          <div class="menu-dia-a-dia">
-            <a href="" class="dia-a-dia-title">Dia a Dia</a
-            ><i class="icon-seta-down-solid"></i>
-          </div>
-          <a href=""><i class="icon-menucontalogin"></i></a>
-          <a href=""><i class="icon-shopping_cart_black_24dp"></i></a>
+      </div>
+      <div class="grid" id="menu-direito">
+        <div class="menu-dia-a-dia">
+          <i class="icon-find-search"></i>
+          <a href="" class="dia-a-dia-title">Dia a Dia</a><i class="icon-seta-down-solid"></i>
         </div>
-      </nav>
-    </header>
+        <a href=""><i class="icon-menucontalogin"></i></a>
+        <a href=""><i class="icon-shopping_cart_black_24dp"></i></a>
+      </div>
+    </nav>
+  </header>
 
-    <!--CONTEUDO-->
-    <main>
-      <section class="section-1">
-        <div class="container">
-          <nav class="navigation-2">
-            <ul class="grid">
-              <li onclick="openClose()">
-                <a href="#"
-                  >Sites<i class="icon-seta-down-solid"></i
-                  ><i class="icon-seta-up-solid"></i
-                ></a>
-              </li>
-              <li><a href="#">Redes Sociais</a></li>
-              <li><a href="#">E-commerce</a></li>
-              <li><a href="#">Mídia Online</a></li>
-              <li><a href="#">Landing Pages</a></li>
-            </ul>
-            <div id="pesquisar">
-              <input
-                type="search"
-                name="buscar"
-                id="buscar"
-                placeholder="Digite sua pesquisa"
-              />
-            </div>
-          </nav>
-
-          <!--Menu Site-->
-          <div class="menu-sites">
-            <div id="caixa-menu-sites">
-              <div class="div-1">
-                <h2>Soluções Site</h2>
-                <ul>
-                  <li><a href="#">Briefing</a></li>
-                  <li><a href="#">Briefing</a></li>
-                  <li><a href="#">Criação</a></li>
-                  <li><a href="#">Veiculação</a></li>
-                </ul>
-              </div>
-              <div class="div-2">
-                <h2>Soluções por E-commerce</h2>
-                <ul>
-                  <li><a href="#">Lorem</a></li>
-                  <li><a href="#">Ipsum</a></li>
-                  <li><a href="#">Dolor</a></li>
-                  <li><a href="#">Google Ads</a></li>
-                  <li><a href="#">Analise de Mercado</a></li>
-                </ul>
-              </div>
-              <div class="div-3">
-                <h2>Soluções por Redes Sociais</h2>
-                <ul>
-                  <li><a href="#">Briefing</a></li>
-                  <li><a href="#">Briefing</a></li>
-                  <li><a href="#">Criação</a></li>
-                  <li><a href="#">Veiculação</a></li>
-                </ul>
-              </div>
-              <div class="div-4">
-                <h2>Soluções por Landing Page</h2>
-                <ul>
-                  <li><a href="#">Conteúdo</a></li>
-                  <li><a href="#">Relato</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-        <img id="banner" src="./assets/imagens/banner.png" alt="Banner" />
-      </section>
-
-      <section class="container">
-        <div id="section-2">
-          <div class="primeira-div"></div>
-
-          <div class="section-2-initial">
-            <div class="section-2-lado-esquerdo">
-              <h2 class="title-h2">
-                Descubra os <br />serviços Nerdweb <br /><span
-                  class="title-span"
-                  >que mais combinam<br />
-                  com a sua empresa</span
-                >
-              </h2>
-              <a class="titulo-a" href="">Ver Serviços</a>
-            </div>
-
-            <div class="section-2-lado-direito swiper">
-              <div class="carrossel swiper">
-                <div class="swiper-wrapper">
-                  <div class="card-1 swiper-slide">
-                    <i class="icon-alt_route_black_24dp"></i>
-                    <h3 class="carrossel-title">Titulo</h3>
-                    <p>Dolor sit amet, consetetur sadipscing elitr, sed</p>
-                  </div>
-
-                  <div class="card-2 swiper-slide">
-                    <i class="icon-headset_mic_black_24dp"></i>
-                    <h3 class="carrossel-title">Serviço</h3>
-                    <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    </p>
-                  </div>
-
-                  <div class="card-3 swiper-slide">
-                    <i class="icon-inventory_black_24dp"></i>
-                    <h3 class="carrossel-title">Exemplo</h3>
-                    <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    </p>
-                  </div>
-                </div>
-                <div class="swiper-pagination"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="container">
-        <div id="section-3">
-          <h2 class="title-h2">
-            Conheça todos <span class="title-span">produtos Nerdweb</span>
-          </h2>
-
-          <div id="produtos-nerd-web">
-            
-            <div class="swipeer">         
-            <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <img src="./assets/imagens/PHONE.png" alt="" />
-              <p>E-commerce</p>
-            </div>
-            <div class="swiper-slide">
-              <img src="./assets/imagens/LAPTOP.png" alt="" />
-              <p>Sites</p>
-            </div>
-            <div class="swiper-slide">
-              <img src="./assets/imagens/SHOP.png" alt="" />
-              <p>Redes</p>
-            </div>
-            <div class="swiper-slide">
-              <img src="./assets/imagens/LAPTOP.png" alt="" />
-              <p>Sites</p>
-            </div>
-            <div class="swiper-slide">
-              <img src="./assets/imagens/PHONE.png" alt="" />
-              <p>E-commerce</p>
-            </div>
-            <div class="swiper-slide">
-              <img src="./assets/imagens/SHOP.png" alt="" />
-              <p>Redes</p>
-            </div>
-            <div class="swiper-slide">
-              <img src="./assets/imagens/LAPTOP.png" alt="" />
-              <p>Sites</p>
-            </div>
-            <div class="swiper-slide">
-              <img src="./assets/imagens/PHONE.png" alt="" />
-              <p>E-commerce</p>
-            </div>
-            <div class="swiper-slide">
-              <img src="./assets/imagens/SHOP.png" alt="" />
-              <p>Redes</p>
-            </div>
-          </div>
-          <div class="swiper-paginatioon"></div>
-          
-            </div>
-
-
-          </div>
-
-          <a class="titulo-a" href="">Ver todos os produtos</a>
-        </div>
-      </section>
-
-      <section class="container">
-        <div id="section-4">
-          <div>
-            <h3>Faça parte do nosso time de nerds</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-              nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-              erat, sed diam voluptua.
-            </p>
-            <a class="titulo-a" href="">CADASTRE-SE</a>
-          </div>
-        </div>
-      </section>
-
-      <section class="container">
-        <div id="section-5">
-          <div class="titulo-5">
-            <h3>Seleção de Serviços</h3>
-            <p>Conheça nossa seleção especial</p>
-          </div>
-
-          <div class="secao-5-cards">
-            <div class="secao-5-card-1">
-              <div class="secao-5-txt">
-                <h2 class="secao-5-titulo">Serviço de teste de front-end</h2>
-                <p class="secao-5-paragrafo">
-                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                  diam nonumy eirmod tempor invidunt ut labore et dolore magna
-                </p>
-                <a class="secao-5-botao" href="">Conhecer</a>
-              </div>
-            </div>
-
-            <div class="secao-5-card-2">
-              <div class="secao-5-txt">
-                <h2 class="secao-5-titulo">Serviço de teste de front-end</h2>
-                <p class="secao-5-paragrafo">
-                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                  diam nonumy eirmod tempor invidunt ut labore et dolore magna
-                </p>
-                <a class="secao-5-botao" href="">Conhecer</a>
-              </div>
-            </div>
-
-            <div class="secao-5-card-3">
-              <div class="secao-5-txt">
-                <h2 class="secao-5-titulo">Serviço de teste de front-end</h2>
-                <p class="secao-5-paragrafo">
-                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                  diam nonumy eirmod tempor invidunt ut labore et dolore magna
-                </p>
-                <a class="secao-5-botao" href="">Conhecer</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="container">
-        <div id="section-6">
-          <div>
-            <h3>Conheça a visão Nerdweb e entenda nossa história</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-              nonumy eirmod tempor
-            </p>
-            <a href="">IR PARA SOBRE</a>
-          </div>
-        </div>
-      </section>
-
-      <section class="container">
-        <div id="section-7">
-          <div class="section-7-esquerdo">
-            <h3 class="section-7-titulo">
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-              nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-            </h3>
-            <p class="section-7-paragrafo">
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-              nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-              erat, sed diam voluptua.
-              <strong
-                >At vero eos et accusam et justo duo dolores et ea rebum. Stet
-                clita kasd gubergren,</strong
-              >
-              no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem
-              ipsum dolor sit amet, consetetur
-              <strong
-                >sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
-                labore et dolore magna aliquyam erat, sed diam</strong
-              >
-              voluptua. At vero eos et accusam et.
-            </p>
-          </div>
-
-          <div class="section-7-direito">
-            <div class="section-7-img-1"></div>
-            <div class="section-7-img-2"></div>
-            <div class="section-7-img-3"></div>
-          </div>
-        </div>
-      </section>
-
-      <section class="container">
-        <div id="section-8">
-          <div class="section-8-esquerdo">
-            <h2>Novidades e descontos especiais</h2>
-            <p>
-              Descubra com a gente uma vida nova, saudável, cheia de sabor e
-              desconto!
-            </p>
-          </div>
-          <div class="section-8-direito">
-            <input type="text" name="nome" id="nome" placeholder="Nome" />
-            <input type="email" name="email" id="email" placeholder="E-mail" />
-            <a class="titulo-a section-8-cadastrar" href="">Cadastrar</a>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <!--RODAPÈ -->
-    <footer>
+  <!--CONTEUDO-->
+  <main>
+    <section class="section-1">
       <div class="container">
-        <div id="rodape">
-          <div class="rodape-up">
-            <img
-              id="rodape-logo"
-              src="./assets/imagens/Grupo 549.png"
-              alt="rodape-NerdWeb"
-            />
-            <div class="rodape-menu">
-              <div>
-                <h3 class="rodape-titulo">NerdWeb</h3>
-                <a href="">Sobre</a>
-                <a href="">Nossos Princípios</a>
-                <a href="">Funcionários</a>
-                <a href="">Trabalhe Conosco</a>
-              </div>
-              <div>
-                <h3 class="rodape-titulo">Ajuda</h3>
-                <a href="">Prazos e Entregas</a>
-                <a href="">Troca e Devoluções</a>
-                <a href="">Políticas de Privacidade</a>
-              </div>
-              <div>
-                <h3 class="rodape-titulo">Atendimento</h3>
-                <a href="">Políticas de Privacidade</a>
-                <a href="">(41) 3333-3333</a>
-                <a href="">teste@nerdweb.com.br</a>
-              </div>
-              <div>
-                <h3 class="rodape-titulo">Horario de Atendimento</h3>
-                <p>
-                  De segunda a sexta-feira <br />
-                  das 08h00 às 12h00 e <br />
-                  das 13h00 às 17h40
-                </p>
-              </div>
-            </div>
+        <nav class="navigation-2">
+          <ul class="grid">
+            <li onclick="openClose()">
+              <a href="#">Sites<i class="icon-seta-down-solid"></i><i class="icon-seta-up-solid"></i></a>
+            </li>
+            <li><a href="#">Redes Sociais</a></li>
+            <li><a href="#">E-commerce</a></li>
+            <li><a href="#">Mídia Online</a></li>
+            <li><a href="#">Landing Pages</a></li>
+          </ul>
+          <div id="pesquisar">
+            <input type="search" name="buscar" id="buscar" placeholder="Digite sua pesquisa" />
           </div>
+        </nav>
 
-          <div class="rodape-down">
-            <div class="rodape-down-esquerdo">
-              <p>
-                2022 Nerdweb - Extreme Hosting, todos os direitos reservados.
-              </p>
-            </div>
-            <div class="rodape-down-direito">
-              <p>Fique em sintonia com a gente</p>
+        <!--Menu Site-->
+        <div class="menu-sites">
+          <div id="caixa-menu-sites">
+            <div class="div-1">
+              <h2>Soluções Site</h2>
               <ul>
-                <li>
-                  <a
-                    target="_blank"
-                    href="https://www.facebook.com/VictorParanhosCosta/"
-                    ><i class="icon-facebook-brands"></i
-                  ></a>
-                </li>
-                <li>
-                  <a
-                    target="_blank"
-                    href="https://www.instagram.com/victorparanhos_94/"
-                    ><i class="icon-instagram-brands"></i
-                  ></a>
-                </li>
-                <li>
-                  <a
-                    target="_blank"
-                    href="https://www.linkedin.com/in/victorparanhos94/"
-                    ><i class="icon-linkedin-in-brands"></i>
-                  </a>
-                </li>
-                <li>
-                  <a target="_blank" href="https://twitter.com/victorparanhos1"
-                    ><i class="icon-twitter-brands"></i
-                  ></a>
-                </li>
-                <li>
-                  <a target="_blank" href="https://www.youtube.com"
-                    ><i class="icon-youtube-brands"></i
-                  ></a>
-                </li>
+                <li><a href="#">Briefing</a></li>
+                <li><a href="#">Briefing</a></li>
+                <li><a href="#">Criação</a></li>
+                <li><a href="#">Veiculação</a></li>
+              </ul>
+            </div>
+            <div class="div-2">
+              <h2>Soluções por E-commerce</h2>
+              <ul>
+                <li><a href="#">Lorem</a></li>
+                <li><a href="#">Ipsum</a></li>
+                <li><a href="#">Dolor</a></li>
+                <li><a href="#">Google Ads</a></li>
+                <li><a href="#">Analise de Mercado</a></li>
+              </ul>
+            </div>
+            <div class="div-3">
+              <h2>Soluções por Redes Sociais</h2>
+              <ul>
+                <li><a href="#">Briefing</a></li>
+                <li><a href="#">Briefing</a></li>
+                <li><a href="#">Criação</a></li>
+                <li><a href="#">Veiculação</a></li>
+              </ul>
+            </div>
+            <div class="div-4">
+              <h2>Soluções por Landing Page</h2>
+              <ul>
+                <li><a href="#">Conteúdo</a></li>
+                <li><a href="#">Relato</a></li>
               </ul>
             </div>
           </div>
         </div>
       </div>
-    </footer>
-    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-    <script src="funcoes.js"></script>
-    
-  </body>
+      <img id="banner" src="./assets/imagens/banner.png" alt="Banner" />
+    </section>
+
+    <section class="container">
+
+      <div id="section-2">
+        <div class="section-2-botoes">
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+
+        <div class="section-2-initial">
+
+          <div class="section-2-lado-esquerdo">
+            <h2 class="title-h2">
+              Descubra os <br />serviços Nerdweb <br /><span class="title-span">que mais combinam<br />
+                com a sua empresa</span>
+            </h2>
+            <a class="titulo-a" href="">Ver Serviços</a>
+          </div>
+
+
+
+          <div class="swiper section-2-lado-direito">
+            <div class="swiper-wrapper section-2-lado-direito-swiper">
+              <div class="card-1 swiper-slide">
+                <i class="icon-alt_route_black_24dp"></i>
+                <h3 class="carrossel-title">Titulo</h3>
+                <p class="section-2-paragrafo">Dolor sit amet, consetetur sadipscing elitr, sed</p>
+              </div>
+
+              <div class="card-2 swiper-slide">
+                <i class="icon-headset_mic_black_24dp"></i>
+                <h3 class="carrossel-title">Serviço</h3>
+                <p class="section-2-paragrafo">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+              </div>
+
+              <div class="card-3 swiper-slide">
+                <i class="icon-inventory_black_24dp"></i>
+                <h3 class="carrossel-title">Exemplo</h3>
+                <p class="section-2-paragrafo">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+              </div>
+              <div class="card-4 swiper-slide">
+                <i class="icon-alt_route_black_24dp"></i>
+                <h3 class="carrossel-title">Exemplo</h3>
+                <p class="section-2-paragrafo">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+              </div>
+              <div class="card-5 swiper-slide">
+                <i class="icon-headset_mic_black_24dp"></i>
+                <h3 class="carrossel-title">Exemplo</h3>
+                <p class="section-2-paragrafo">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+              </div>
+            </div>
+            
+          </div>
+
+        </div>
+        
+
+      </div>
+
+    </section>
+
+    <section class="container">
+      <div id="section-3">
+        <h2 class="title-h2">
+          Conheça todos <span class="title-span">produtos Nerdweb</span>
+        </h2>
+
+        <div id="produtos-nerd-web">
+
+          <div class="swipeer">
+            
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="./assets/imagens/PHONE.png" alt="" />
+                <p>E-commerce</p>
+              </div>
+              <div class="swiper-slide">
+                <img src="./assets/imagens/LAPTOP.png" alt="" />
+                <p>Sites</p>
+              </div>
+              <div class="swiper-slide">
+                <img src="./assets/imagens/SHOP.png" alt="" />
+                <p>Redes</p>
+              </div>
+              <div class="swiper-slide">
+                <img src="./assets/imagens/LAPTOP.png" alt="" />
+                <p>Sites</p>
+              </div>
+              <div class="swiper-slide">
+                <img src="./assets/imagens/PHONE.png" alt="" />
+                <p>E-commerce</p>
+              </div>
+              <div class="swiper-slide">
+                <img src="./assets/imagens/SHOP.png" alt="" />
+                <p>Redes</p>
+              </div>
+              <div class="swiper-slide">
+                <img src="./assets/imagens/LAPTOP.png" alt="" />
+                <p>Sites</p>
+              </div>
+              <div class="swiper-slide">
+                <img src="./assets/imagens/PHONE.png" alt="" />
+                <p>E-commerce</p>
+              </div>
+              <div class="swiper-slide">
+                <img src="./assets/imagens/SHOP.png" alt="" />
+                <p>Redes</p>
+              </div>
+
+              <div class="swiper-slide">
+                <img src="./assets/imagens/SHOP.png" alt="" />
+                <p>Redes</p>
+              </div>
+              <div class="swiper-slide">
+                <img src="./assets/imagens/LAPTOP.png" alt="" />
+                <p>Sites</p>
+              </div>
+              <div class="swiper-slide">
+                <img src="./assets/imagens/PHONE.png" alt="" />
+                <p>E-commerce</p>
+              </div>
+              
+              <div class="swiper-slide">
+                <img src="./assets/imagens/SHOP.png" alt="" />
+                <p>Redes</p>
+              </div>
+
+              
+            </div>
+
+          </div>
+          <div class="progressbar">
+            <div class="swiper-pagination"></div>
+          </div>
+         
+
+
+        </div>
+
+        <a class="titulo-a" href="">Ver todos os produtos</a>
+      </div>
+    </section>
+
+    <section class="container">
+      <div id="section-4">
+        <div>
+          <h3>Faça parte do nosso time de nerds</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+            erat, sed diam voluptua.
+          </p>
+          <a class="titulo-a" href="">CADASTRE-SE</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="container">
+      <div id="section-5">
+        <div class="titulo-5">
+          <h3>Seleção de Serviços</h3>
+          <p>Conheça nossa seleção especial</p>
+        </div>
+
+        <div class="secao-5-cards">
+          <div class="secao-5-card-1">
+            <div class="secao-5-txt">
+              <h2 class="secao-5-titulo">Serviço de teste de front-end</h2>
+              <p class="secao-5-paragrafo">
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                diam nonumy eirmod tempor invidunt ut labore et dolore magna
+              </p>
+              <a class="secao-5-botao" href="">Conhecer</a>
+            </div>
+          </div>
+
+          <div class="secao-5-card-2">
+            <div class="secao-5-txt">
+              <h2 class="secao-5-titulo">Serviço de teste de front-end</h2>
+              <p class="secao-5-paragrafo">
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                diam nonumy eirmod tempor invidunt ut labore et dolore magna
+              </p>
+              <a class="secao-5-botao" href="">Conhecer</a>
+            </div>
+          </div>
+
+          <div class="secao-5-card-3">
+            <div class="secao-5-txt">
+              <h2 class="secao-5-titulo">Serviço de teste de front-end</h2>
+              <p class="secao-5-paragrafo">
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                diam nonumy eirmod tempor invidunt ut labore et dolore magna
+              </p>
+              <a class="secao-5-botao" href="">Conhecer</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container">
+      <div id="section-6">
+        <div>
+          <h3>Conheça a visão Nerdweb e entenda nossa história</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+            nonumy eirmod tempor
+          </p>
+          <a href="">IR PARA SOBRE</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="container">
+      <div id="section-7">
+        <div class="section-7-esquerdo">
+          <h3 class="section-7-titulo">
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+          </h3>
+          <p class="section-7-paragrafo">
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+            erat, sed diam voluptua.
+            <strong>At vero eos et accusam et justo duo dolores et ea rebum. Stet
+              clita kasd gubergren,</strong>
+            no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem
+            ipsum dolor sit amet, consetetur
+            <strong>sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+              labore et dolore magna aliquyam erat, sed diam</strong>
+            voluptua. At vero eos et accusam et.
+          </p>
+        </div>
+
+        <div class="section-7-direito">
+          <div class="section-7-img-1"></div>
+          <div class="section-7-img-2"></div>
+          <div class="section-7-img-3"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container">
+      <div id="section-8">
+        <div class="section-8-esquerdo">
+          <h2>Novidades e descontos especiais</h2>
+          <p>
+            Descubra com a gente uma vida nova, saudável, cheia de sabor e
+            desconto!
+          </p>
+        </div>
+        <div class="section-8-direito">
+          <input type="text" name="nome" id="nome" placeholder="Nome" />
+          <input type="email" name="email" id="email" placeholder="E-mail" />
+          <a class="titulo-a section-8-cadastrar" href="">Cadastrar</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!--RODAPÈ -->
+  <footer>
+    <div class="container">
+      <div id="rodape">
+        <div class="rodape-up">
+          <img id="rodape-logo" src="./assets/imagens/Grupo 549.png" alt="rodape-NerdWeb" />
+          <div class="rodape-menu">
+            <div>
+              <h3 class="rodape-titulo">NerdWeb</h3>
+              <a href="">Sobre</a>
+              <a href="">Nossos Princípios</a>
+              <a href="">Funcionários</a>
+              <a href="">Trabalhe Conosco</a>
+            </div>
+            <div>
+              <h3 class="rodape-titulo">Ajuda</h3>
+              <a href="">Prazos e Entregas</a>
+              <a href="">Troca e Devoluções</a>
+              <a href="">Políticas de Privacidade</a>
+            </div>
+            <div>
+              <h3 class="rodape-titulo">Atendimento</h3>
+              <a href="">Políticas de Privacidade</a>
+              <a href="">(41) 3333-3333</a>
+              <a href="">teste@nerdweb.com.br</a>
+            </div>
+            <div>
+              <h3 class="rodape-titulo">Horario de Atendimento</h3>
+              <p>
+                De segunda a sexta-feira <br />
+                das 08h00 às 12h00 e <br />
+                das 13h00 às 17h40
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="rodape-down">
+          <div class="rodape-down-esquerdo">
+            <p>
+              2022 Nerdweb - Extreme Hosting, todos os direitos reservados.
+            </p>
+          </div>
+          <div class="rodape-down-direito">
+            <p>Fique em sintonia com a gente</p>
+            <ul>
+              <li>
+                <a target="_blank" href="https://www.facebook.com/VictorParanhosCosta/"><i
+                    class="icon-facebook-brands"></i></a>
+              </li>
+              <li>
+                <a target="_blank" href="https://www.instagram.com/victorparanhos_94/"><i
+                    class="icon-instagram-brands"></i></a>
+              </li>
+              <li>
+                <a target="_blank" href="https://www.linkedin.com/in/victorparanhos94/"><i
+                    class="icon-linkedin-in-brands"></i>
+                </a>
+              </li>
+              <li>
+                <a target="_blank" href="https://twitter.com/victorparanhos1"><i class="icon-twitter-brands"></i></a>
+              </li>
+              <li>
+                <a target="_blank" href="https://www.youtube.com"><i class="icon-youtube-brands"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  <script src="funcoes.js"></script>
+
+</body>
+
 </html>

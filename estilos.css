@@ -43,6 +43,14 @@ html {
 }
 
 :root {
+    /* tamanho de fontes: */
+
+    --font-size14rem: 1.4rem;
+    --font-size15rem: 1.5rem;
+    --font-size16rem: 1.6rem;
+    --font-size18rem: 1.8rem;
+    --font-size20rem: 2rem;
+    --font-size32rem: 3.2rem;
 
     /* Colors: */
     --unnamed-color-283137: #283137;
@@ -63,19 +71,19 @@ body {
     
     max-width: 192rem;
     margin: auto;
-    font-size: 1.6rem;  
+    font-size: var(--font-size16rem);  
     
 }
 
 .container {
     
     max-width: 132rem;
-    width: 90%;
+    width: 95%;
     margin: 0 auto;
 }
 
 .titulo-a {
-    font-size: 1.4rem;
+    font-size: var(--font-size14rem);
     background-color: var(--unnamed-color-71d8ff);
     text-transform: uppercase;
     font-family: 'Roboto Slab', serif;
@@ -103,7 +111,7 @@ body {
 
 #menu-option ul li a{
     color: #2C3A2F;
-    font-size: 1.4rem;
+    font-size: var(--font-size14rem);
     font-family: "ArcherPro Book", sans-serif;
    
 }
@@ -130,6 +138,9 @@ body {
 
 }
 
+.icon-find-search, .icon-times-solid-close, .icon-menu-bars-solid, .menu-toggle {
+    display: none;
+}
 
 /*CONTEUDO*/
 
@@ -155,7 +166,7 @@ body {
     font-family: "ArcherPro Book", sans-serif;
     text-transform: uppercase;
     color: #FFFFFF;
-    font-size: 1.4rem;
+    font-size: var(--font-size14rem);
     padding: 0.4rem 0;
     white-space: nowrap;
     display: flex;
@@ -179,7 +190,7 @@ body {
     border-radius: 0.8rem;
     background-color: var(--unnamed-color-033244);
     color: var(--unnamed-color-b2eaff);
-    font-size: 1.4rem;
+    font-size: var(--font-size14rem);
     padding: 1.2rem 1.5rem;
     font-family: "ArcherPro Book", sans-serif;
 }
@@ -239,7 +250,7 @@ input#buscar::placeholder {
 }
 
 #caixa-menu-sites div h2 {
-    font-size: 1.8rem;
+    font-size: var(--font-size18rem);
     color: var(--unnamed-color-005271);
     font-weight: 800;
     position: relative;
@@ -257,7 +268,7 @@ input#buscar::placeholder {
 }
 
 #caixa-menu-sites .div-1 ul li a {
-    font-size: 1.4rem;
+    font-size: var(--font-size14rem);
     font-weight: bold;
     color: var(--unnamed-color-033244);
     display: block;
@@ -278,7 +289,7 @@ input#buscar::placeholder {
 
 .div-2 ul li a, .div-3 ul li a, .div-4 ul li a {
     font-weight: normal;
-    font-size: 1.4rem;
+    font-size: var(--font-size14rem);
     display: block;
     margin-top: 0.8rem;
     white-space: nowrap;
@@ -286,19 +297,36 @@ input#buscar::placeholder {
 
 /*------------------- */
 
+.swiper-button-next::after, .swiper-button-prev::after {
+    color: var(--unnamed-color-005271);
+    font-size: var(--font-size18rem);
+    
+}
 
 #section-2{
-    margin: 7.5rem auto 7rem;
+    margin: 12.3rem auto 7rem;
     width: 100%;
     height: 36.4rem;
+    display: flex;
+    align-items: center;
+    position: relative;
+    
 }
-#section-2 .primeira-div {
-    background-color: var(--unnamed-color-00aeef);
-    height: 1px;
+#section-2 .section-2-botoes {
+    position: absolute;
+    height: 5rem;
+    width: 12rem;
+    text-align: left;
+    z-index: 3;
+    top: -3rem;
+    left: 41.6rem;
+
 }
 
+
 .section-2-initial {
-    display: flex;
+    display: grid;
+    grid-auto-flow: column;
 }
 .section-2-lado-esquerdo{
     white-space: nowrap;
@@ -319,7 +347,7 @@ input#buscar::placeholder {
 
 
 .title-h2 {
-    font-size: 3.2rem;
+    font-size: var(--font-size32rem);
     font-family: 'Roboto Slab', serif;
     font-weight: 900;
 }
@@ -329,7 +357,7 @@ input#buscar::placeholder {
 }
 
 
-.section-2-initial .section-2-lado-esquerdo a{
+.section-2-lado-esquerdo a{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -339,69 +367,50 @@ input#buscar::placeholder {
 }
 
 
-.carrossel{
-    display: grid;
-    grid-auto-flow: column;
-    gap: 2.4rem;
+.section-2-lado-direito {
+   width: 100%;
 }
 
 
-.card-1, .card-2, .card-3 {
-    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.3);
-    border-radius: 3px;
-    width: 28.4rem;
-    width: 100%;
-    height: 31.6rem;
-    padding: 3rem;
-    transform: translateY(1%);
-    transition: transform 0.3s;
-}
-
-.card-1:hover, .card-2:hover, .card-3:hover {
-    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.5);
-    transform: translateY(0%);
-    background-color: #f3f3f3e0
-}
-
-.carrossel div i{
+.section-2-lado-direito-swiper div i{
     display: block;
     text-align: center;
 }
+
+.card-1, .card-2, .card-3, .card-4, .card-5 {
+
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
+    width: 28.4rem;
+    height: 31.6rem;
+    padding: 3rem;
+    margin: 0.2rem 0;
+    
+}
+
+.card-1:hover, .card-2:hover, .card-3:hover, .card-4:hover, .card-5:hover {
+ 
+    background-color: rgba(251, 251, 251, 0.731)
+}
+
 
 .carrossel-title{
     text-align: center;
     font-family: 'Roboto Slab', serif;
     font-weight: 900;
     color: #101912;
-    font-size: 1.6rem;
+    font-size: var(--font-size16rem);
     margin: 1.6rem auto 1.1rem;
 }
 
-.carrossel div p {
+.section-2-paragrafo {
     text-align: center;
     font-family: 'Roboto Slab', serif;
     color: #101912;
     font-weight: 500;
-    font-size: 1.5rem;
+    font-size: var(--font-size15rem);
 }
 
-#produtos-nerd-web{
-    width: 100%;
-    background-color: #F3F3F3;
-    height: 17.2rem;
-    padding: 2rem;
-}
-
-
-
-#produtos-nerd-web div {
-    max-width: 12.2rem;
-    width: 100%;
-    height: 13.2rem;
-    background-color: #F3F3F3;
-    mix-blend-mode: multiply;
-
-}
 
 #section-3 h2 {
     text-align: center;
@@ -416,11 +425,40 @@ input#buscar::placeholder {
     height: 3.7rem;
     margin: 4rem auto 0;
 }
-#produtos-nerd-web div {
-    display: grid;
 
+#produtos-nerd-web{
+    width: 100%;
+    background-color: #F3F3F3;
+    height: 17.2rem;
+    padding: 2rem;
+    overflow-x: hidden;
+    position: relative;
+}
+
+
+#produtos-nerd-web .swipeer .swiper-wrapper {
+    display: grid;
+    grid-auto-flow: column;
+
+    
+}
+
+#produtos-nerd-web .swipeer .swiper-wrapper div {
+    max-width: 12.2rem;
+    width: 100%;
+    height: 13.2rem;
+    background-color: #ebebeb;
+    margin-right: 2rem;
 
 }
+.progressbar {
+    position: absolute;
+    bottom: 0;
+    height: 0.7rem;
+    width: 100%;
+}
+
+
 
 #produtos-nerd-web div img {
     display: block;
@@ -436,9 +474,12 @@ input#buscar::placeholder {
     color: #676767;
     font-family: 'Roboto Slab', serif;
     font-weight: 500;    
-    font-size: 1.4rem;
+    font-size: var(--font-size14rem);
     margin: 0 auto 1rem;
 }
+
+
+
 
 #section-4 {
     margin: 8rem auto auto;
@@ -455,7 +496,7 @@ input#buscar::placeholder {
    
     max-width: 64.6rem;
     width: 100%;
-    height: 24.8rem;
+    
     padding-left: 3.5rem;
     font-family: 'Roboto Slab', serif;
 
@@ -463,14 +504,14 @@ input#buscar::placeholder {
 
 #section-4 div h3{
     color: var(--unnamed-color-033244);
-    font-size: 3.2rem;
+    font-size: var(--font-size32rem);
     font-weight: 900;
     margin-bottom: 2.4rem;
 }
 
 #section-4 div p {
     color: var(--unnamed-color-005271);
-    font-size: 1.8rem;
+    font-size: var(--font-size18rem);
     font-weight: bold;
     margin-right: 7.8rem;
     margin-bottom: 6rem;
@@ -480,7 +521,7 @@ input#buscar::placeholder {
     height: 3.9rem;
     display: inline-block;
     padding: 1rem 3.5rem;
-    font-size: 1.4rem;
+    font-size: var(--font-size14rem);
     font-weight: 900;
 
 }
@@ -498,13 +539,13 @@ input#buscar::placeholder {
    text-align: center;
    color: #2C3A2F;
    font-weight: 900;
-   font-size: 3.2rem;
+   font-size: var(--font-size32rem);
 
 }
 #section-5 .titulo-5 p {
     text-align: center;
     color: var(--unnamed-color-0089bc);
-    font-size: 2rem;
+    font-size: var(--font-size20rem);
     font-weight: 500;
 }
 
@@ -542,7 +583,7 @@ input#buscar::placeholder {
 }
 
 .secao-5-titulo {
-    font-size: 2rem;
+    font-size: var(--font-size20rem);
     font-weight: 900;
     color: #FFFFFF;
     white-space: nowrap;
@@ -552,14 +593,14 @@ input#buscar::placeholder {
 
 .secao-5-paragrafo {
     color: var(--unnamed-color-e2f7ff);
-    font-size: 1.6rem;
+    font-size: var(--font-size16rem);
     font-weight: 200;
     margin-bottom: 4rem;
     
 }
 .secao-5-botao {
     color: var(--unnamed-color-00aeef);
-    font-size: 1.4rem;
+    font-size: var(--font-size14rem);
     font-weight: 800;
     text-transform: uppercase;
 }
@@ -592,7 +633,7 @@ input#buscar::placeholder {
 
 #section-6 div h3{
     color: #FFFFFF;
-    font-size: 3.2rem;
+    font-size: var(--font-size32rem);
     font-weight: 900;
     margin-bottom: 1.6rem;
     width: 55.1rem;
@@ -600,7 +641,7 @@ input#buscar::placeholder {
 
 #section-6 div p {
     color: var(--unnamed-color-71d8ff);
-    font-size: 2rem;
+    font-size: var(--font-size20rem);
     font-weight: 500;
     margin-right: 7.8rem;
     margin-bottom: 4rem;
@@ -613,7 +654,7 @@ input#buscar::placeholder {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 1.4rem;
+    font-size:var(--font-size14rem);
     font-weight: 900;
     color: #FFFFFF;
     background-color: var(--unnamed-color-0089bc);
@@ -636,12 +677,12 @@ input#buscar::placeholder {
 }
 
 .section-7-titulo {
-    font-size: 1.6rem;
+    font-size: var(--font-size16rem);
     font-weight: 900; 
     margin-bottom: 2.5rem;  
 }
 .section-7-paragrafo {
-    font-size: 1.5rem;
+    font-size: var(--font-size15rem);
 }
 
 .section-7-direito {
@@ -699,13 +740,13 @@ input#buscar::placeholder {
 }
 #section-8 .section-8-esquerdo h2 {
     color: var(--unnamed-color-033244);
-    font-size: 3.2rem;
+    font-size: var(--font-size32rem);
     margin-bottom: 1.6rem;
     font-weight: 900;
 }
 #section-8 .section-8-esquerdo p {
     color: var(--unnamed-color-0089bc);
-    font-size: 2rem;
+    font-size: var(--font-size20rem);
     font-weight: 500;
 }
 
@@ -723,7 +764,7 @@ input#nome {
     outline: none;
     border: 1px solid #005271;
     background-color: transparent;
-    font-size: 1.6rem;
+    font-size: var(--font-size16rem);
 }
 
 input#email {
@@ -735,11 +776,11 @@ input#email {
     outline: none;
     border: 1px solid #005271;
     background-color: transparent;
-    font-size: 1.6rem;
+    font-size: var(--font-size16rem);
 }
 #nome::placeholder, #email::placeholder {
     color: var(--unnamed-color-005271);
-    font-size: 1.6rem;
+    font-size: var(--font-size16rem);
     font: 300;
     font-family: 'Roboto Slab', serif;
     
@@ -783,7 +824,7 @@ footer {
 
 }
 .rodape-titulo {
-    font-size: 1.8rem;
+    font-size: var(--font-size18rem);
     color: var(--unnamed-color-e2f7ff);
     font-weight: 900;
     text-transform: uppercase;
@@ -791,14 +832,14 @@ footer {
 }
 .rodape-menu div a{
     color: var(--unnamed-color-00aeef);
-    font-size: 1.4rem;
+    font-size: var(--font-size14rem);
     font-style: 500;
     display: block;
     margin-bottom: 1rem;
 }
 .rodape-up div p {
     color: var(--unnamed-color-b2eaff);
-    font-size: 1.4rem;
+    font-size: var(--font-size14rem);
     font-style: 500;
     line-height: 2.2rem;
 
@@ -820,7 +861,7 @@ footer {
 }
 .rodape-down-esquerdo p{
     color: #E1E1E1;
-    font-size: 1.4rem;
+    font-size: var(--font-size14rem);
     font-weight: 400;
 }
 
@@ -843,9 +884,222 @@ footer {
 }
 
 @media (max-width: 1024px) {
-    
+   
+    html {
+        font-size: 58%;
+    }
+  
+    #section-8 {
+        padding: 4rem;
+        display: grid;
+        grid-auto-flow: column;
+        gap: 3rem;
+        border: 1px solid green;
+
+    }
+
+    #section-8 .section-8-direito input {
+        width: 100%;
+        display: inline-block;    
+    }
+    .secao-5-paragrafo {
+        margin-bottom: 1.8rem;
+        font-size: var(--font-size15rem);
+
+    }
+    .secao-5-titulo {
+        font-size: var(--font-size18rem); 
+    }
+ 
+    .section-7-esquerdo {
+        margin-right: 3rem;;
+
+    }
+    .section-7-direito{
+        gap: 1.5rem;
+    }
+    .section-7-direito div {
+        height: 14.5rem;
+        width: 14.5rem;
+    }
+    .rodape-menu {
+        gap: 4rem;
+    }
+    .rodape-titulo {
+        font-size: var(--font-size16rem);
+    }
+    .rodape-menu div a {
+        font-size: 1.2rem;
+    }
+    #section-4 {
+        padding: 0;
+    }
+    #section-6 div{
+        padding: 0;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .header {
+        width: 100%;
+        background-color: white;
+        height: 6.2rem;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 4;
+        box-sizing: content-box;
+        box-shadow: 1px 5px 10px #00afef2a;
+       
+    }
+    #logo {
+        display: none;
+    }
+    .icon-menu-bars-solid {
+        display: block;
+    }
+    .navigation-1.active .icon-times-solid-close {
+        display: block;
+        position: absolute;
+        top: 10;
+        z-index: 11;
+        
+        
+    }
+
+    .navigation-1.active .menu-toggle {
+        display: grid;
+        grid-auto-flow: row;
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        background-color: white;
+        width: 100%;
+        z-index: 10;
+        place-items: center;
+
+    }
+    .navigation-1.active #menu-option .menu-toggle li a {
+        padding: 2rem;
+        font-size: 3rem;
+        font-weight: 900;
+   
+    }
+
+    .navigation-1.active .icon-menu-bars-solid {
+        display: none;
+        
+    }
+
+    #section-7{
+        display: block;
+        height: 100%;
+        margin-bottom: 7rem;
+    }
+    .section-7-esquerdo {
+        width: 90%;
+        margin: auto;
+    }
     
 
+    .section-7-direito {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 4rem;
+        
+    }
+   
+    #section-8 .section-8-esquerdo h2 {
+        font-size: 2.8rem;
+       
+    }
 
-    
+    #section-8 .section-8-esquerdo p {
+        font-size: 1.7rem;
+       
+    }
+    .rodape-up {
+        margin: auto;
+        display: block;
+    }
+    #rodape-logo {
+        margin: auto;
+        display: none;
+        margin: 4rem auto;
+    }
+    .rodape-menu {
+        gap: 2rem;
+    }
+    .rodape-up div p{
+        font-size: 1.2rem;
+    }
+    .rodape-titulo {
+        font-size: 1.4rem;
+        font-weight: 700;
+
+    }
+    .rodape-down-direito p{
+        font-size: 1.4rem;
+        margin-bottom: 1rem;
+
+    }
+    .rodape-down-esquerdo p{
+        font-size: 1.2rem;
+    }
+    .secao-5-titulo {
+        font-size: 1.4rem;
+        font-weight: 600;
+
+    }
+    .secao-5-txt {
+        padding: 1.2rem;
+    }
+    .secao-5-paragrafo {
+        font-size: 1.3rem;
+
+    }
+    .secao-5-botao {
+        font-weight: 600;
+        
+    }
+    #section-6 div{
+        margin: auto;
+    }
+    #section-6 div h3 {
+        font-size: 3rem;
+
+    }
+    #section-6 div p{
+        font-size: 1.8rem;
+        font-weight: 400;
+    }
+    #buscar {
+        display: none;
+    }
+    .grid {
+        display: none;
+    }
+    .icon-find-search {
+        display: block;
+        margin-right: 3rem;
+        cursor: pointer;
+    }
+}
+
+@media (max-width: 425){
+    html {
+        font-size: 30%;
+    }
+    #section-2 .section-2-initial {
+        display: grid;
+        grid-auto-flow: row;
+        overflow: hidden;
+
+    }
+    #section-8 {
+        display: block;
+    }
 }
