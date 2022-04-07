@@ -27,6 +27,8 @@ a {
 a:hover {
     opacity: 0.8;
 }
+
+
 .grid {
     display: grid;
     grid-auto-flow: column;
@@ -141,6 +143,7 @@ body {
 .icon-find-search, .icon-times-solid-close, .icon-menu-bars-solid, .menu-toggle {
     display: none;
 }
+
 
 /*CONTEUDO*/
 
@@ -979,14 +982,8 @@ footer {
         width: 100%;
         z-index: 10;
         place-items: center;
+    }
 
-    }
-    .navigation-1.active #menu-option .menu-togglee li a {
-        padding: 2rem;
-        font-size: 3rem;
-        font-weight: 900;
-   
-    }
 
     .navigation-1.active .icon-menu-bars-solid {
         display: none;
