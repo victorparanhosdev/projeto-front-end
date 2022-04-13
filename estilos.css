@@ -392,7 +392,6 @@ input#buscar::placeholder {
 }
 
 .card-1:hover, .card-2:hover, .card-3:hover, .card-4:hover, .card-5:hover {
- 
     background-color: rgba(251, 251, 251, 0.731)
 }
 

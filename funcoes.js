@@ -39,15 +39,13 @@ const swiper = new Swiper('.swiper', {
     320: {
       slidesPerView: 1,
     },
-
-    768: {
-      slidesPerView: 1
-
-    },
+    
 
     1024: {
       slidesPerView: 2,
+
     },
+    
     1440: {
       slidesPerView: 3,
     },
@@ -74,13 +72,10 @@ const swiperP = new Swiper('.swipeer', {
       slidesPerView: 2,
     },
     768: {
-      slidesPerView: 4,
-    },
-    1024: {
-      slidesPerView: 7,
+      slidesPerView: 5,
     },
     1440: {
-      slidesPerView: 11,
+      slidesPerView: 9,
     },
 
 
