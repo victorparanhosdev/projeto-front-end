@@ -12,7 +12,6 @@
  /* Reset: */
 
 * {  
-    border: 0;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -128,8 +127,7 @@ body {
 .dia-a-dia-title{
     text-transform: uppercase;
     font-size: 1.2rem;
-    font-family: "ArcherPro Bold";   
-    display: block;
+    font-family: "ArcherPro Bold"; 
     
 }
 
@@ -137,6 +135,7 @@ body {
     margin-left: 0.6rem; 
     white-space: nowrap;
     display: block;
+ 
 
 }
 
@@ -731,14 +730,15 @@ input#buscar::placeholder {
     width: 100%;
     height: 26.2rem;
     background-color: #F3F3F3;
-    padding: 4.5rem 0 4.2rem 11.2rem;
+    padding: 4.5rem 11.2rem 4.2rem 11.2rem;
     display: flex;
     font-family: 'Roboto Slab', serif;
+   
 }
 .section-8-esquerdo {
     width: 31.2rem;
     height: 17.5rem;
-   
+    margin-right: 11.2rem;
 }
 #section-8 .section-8-esquerdo h2 {
     color: var(--unnamed-color-033244);
@@ -761,7 +761,7 @@ input#nome {
     width: 67.2rem;
     height: 4.4rem;
     margin-bottom: 1.5rem;
-    display: block;
+    
     padding: 1.2rem 0 1.2rem 2.4rem ;
     outline: none;
     border: 1px solid #005271;
@@ -885,62 +885,174 @@ footer {
     transform: translateY(0%);
 }
 
-@media (max-width: 1024px) {
-   
-    html {
-        font-size: 58%;
-    }
-  
-    #section-8 {
-        padding: 4rem;
-        display: grid;
-        grid-auto-flow: column;
-        gap: 3rem;
-        border: 1px solid green;
 
+@media (max-width: 1385px) {
+    #section-8 .section-8-esquerdo h2{
+        font-size: 3rem
+    }
+    #section-8 .section-8-esquerdo p {
+        font-size: 1.8rem;
     }
 
-    #section-8 .section-8-direito input {
-        width: 100%;
-        display: inline-block;    
+    .section-8-esquerdo {
+        margin-right: 4rem
     }
-    .secao-5-paragrafo {
-        margin-bottom: 1.8rem;
-        font-size: var(--font-size15rem);
 
-    }
-    .secao-5-titulo {
-        font-size: var(--font-size18rem); 
-    }
- 
-    .section-7-esquerdo {
-        margin-right: 3rem;;
-
-    }
-    .section-7-direito{
-        gap: 1.5rem;
-    }
-    .section-7-direito div {
-        height: 14.5rem;
-        width: 14.5rem;
-    }
-    .rodape-menu {
-        gap: 4rem;
-    }
-    .rodape-titulo {
-        font-size: var(--font-size16rem);
-    }
-    .rodape-menu div a {
-        font-size: 1.2rem;
-    }
-    #section-4 {
-        padding: 0;
-    }
-    #section-6 div{
-        padding: 0;
-    }
 
 }
+@media (max-width: 1300px) {
+
+    #section-8 {
+        padding: 4.5rem 10.2rem 4.2rem 10.2rem;
+    }
+}
+
+@media (max-width: 1268px) {
+
+    #section-8 {
+        padding: 4.5rem 10rem 4.2rem 10rem;
+    }
+    #section-8 .section-8-esquerdo h2{
+        font-size: 2.8rem;
+    }
+    #section-8 .section-8-esquerdo p{
+        font-size: 1.6rem;
+    }
+}
+
+@media (max-width: 1250px) {
+
+    #section-8 {
+        padding: 4.5rem;
+    }
+}
+@media (max-width: 1222px) {
+    
+    .secao-5-paragrafo {
+        margin-bottom: 2rem;
+    }
+
+
+}
+
+
+@media (max-width: 1200px) {
+    .section-7-img-1, .section-7-img-2, .section-7-img-3 {
+        height: 15rem;
+        width: 15rem;
+    }
+    .section-7-titulo{
+        font-size: 1.45rem;
+    }
+    .section-7-paragrafo{
+        font-size: 1.35rem;
+    }
+    
+
+
+}
+@media (max-width: 1155px) {
+    #section-7 {
+        display: block;
+        height: 100%;
+        margin: auto;
+    
+    }
+    #section-8 {
+        display: block;
+    }
+    .section-7-titulo {
+        font-size: 2.1rem;
+    }
+    .section-7-paragrafo {
+        font-size: 2rem;
+    }
+    .section-7-esquerdo {
+        width: 90%;
+    }
+    .section-7-direito {
+        display: flex;
+        justify-content: center;
+        padding: 2rem 0;
+        margin: 1rem;
+       
+    }
+    .section-7-img-1, .section-7-img-2, .section-7-img-3 {
+        height: 16rem;
+        width: 16rem;
+    }
+    #section-8 {
+        height: 100%;
+        padding: 4rem;
+    }
+
+    #section-8 .section-8-esquerdo h2 {
+        font-size: 3.2rem;
+    }
+    #section-8 .section-8-esquerdo p {
+        font-size: 2rem;
+    }
+    .section-8-esquerdo {
+        width: 100%;
+        height: 100%;
+        text-align: center;
+      
+    }
+    .section-8-direito {
+      display: grid;
+      place-items: center;
+      margin: 3.5rem auto;
+
+      
+    }
+    .section-8-cadastrar {
+        margin-left: 0;
+       
+    }
+    .secao-5-paragrafo {
+        margin-bottom: 2rem;
+
+    }
+    #section-4 {
+        padding-left: 3.5rem;
+    }
+    #section-4 div{
+        padding-left: 0;
+
+    }
+    #section-6 div {
+        padding-left: 3.5rem;
+        margin: 0;
+    }
+
+
+}
+
+@media (max-width: 1125px) {
+    .rodape-menu {
+        gap: 5rem;
+    }
+}
+
+
+@media (max-width: 1100px) {
+    .rodape-menu {
+        gap: 4.5rem;
+    }
+    .secao-5-paragrafo{
+        font-size: 1.4rem;
+    }
+    .secao-5-titulo{
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 1065px) {
+
+}
+
+
+
 
 @media (max-width: 768px) {
     .header {
@@ -1099,3 +1211,4 @@ footer {
         display: block;
     }
 }
+
