@@ -85,4 +85,3 @@ const swiperP = new Swiper('.swipeer', {
 });
 
 
-console.log(menuHamburguer)

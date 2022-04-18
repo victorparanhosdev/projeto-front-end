@@ -614,6 +614,19 @@ input#buscar::placeholder {
     position: absolute;
     bottom: 0;  
 }
+
+.botao-swiper {
+position: absolute;
+top: -2rem;
+left: 2rem;
+}
+
+.swiper-2{
+    position: relative;
+}
+
+
+
 #section-6 {
     margin: 7.6rem auto 8rem;
     background: url("./assets/imagens/BG\ CONHEÇA.png") no-repeat 100%;
@@ -952,6 +965,8 @@ footer {
 
 }
 @media (max-width: 1155px) {
+
+   
     #section-7 {
         display: block;
         height: 100%;
@@ -982,6 +997,7 @@ footer {
         width: 16rem;
     }
     #section-8 {
+      
         height: 100%;
         padding: 4rem;
     }
@@ -999,11 +1015,12 @@ footer {
       
     }
     .section-8-direito {
-      display: grid;
-      margin: 3.5rem auto;
-
-      
+        margin: 3.5rem auto;
+        
     }
+  
+   
+    
     .section-8-cadastrar {
         margin-left: 0;
        
