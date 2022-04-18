@@ -1000,7 +1000,6 @@ footer {
     }
     .section-8-direito {
       display: grid;
-      place-items: center;
       margin: 3.5rem auto;
 
       
