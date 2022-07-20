@@ -36,6 +36,22 @@ html {
     /*scroll-behavior: smooth;*/
 }
 
+.container {
+    max-width: 132rem;
+    width: 95%;
+    margin: 0 auto;
+}
+
+.titulo-a {
+    font-size: 1.4rem;
+    background-color: var(--unnamed-color-71d8ff);
+    text-transform: uppercase;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 900;
+    color: var(--unnamed-color-033244);
+}
+
+
 :root {
     /* Colors: */
     --unnamed-color-283137: #283137;
@@ -60,20 +76,6 @@ body {
     
 }
 
-.container {
-    max-width: 132rem;
-    width: 95%;
-    margin: 0 auto;
-}
-
-.titulo-a {
-    font-size: 1.4rem;
-    background-color: var(--unnamed-color-71d8ff);
-    text-transform: uppercase;
-    font-family: 'Roboto Slab', serif;
-    font-weight: 900;
-    color: var(--unnamed-color-033244);
-}
 
 
 /* MENU DESKTOP 1: */
@@ -123,10 +125,20 @@ body {
 }
 
 /* MENU DESKTOP 2: */
-#navigation-2{
+
+#navigation-2 {
     background-color: var(--unnamed-color-033244); 
     border-top: 0.3rem solid var(--unnamed-color-71d8ff)   
 }
+
+#segundo-menu {
+    height: 6.9rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+
 .lista-menu {
     display: grid;
     grid-auto-flow: column;
@@ -143,13 +155,7 @@ body {
     text-transform: uppercase; 
 }
 
-#segundo-menu {
-    height: 6.9rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-   
-}
+
 
 #buscar {
     height: 4.2rem;
@@ -172,8 +178,12 @@ input#buscar::placeholder {
 
 
 /*MENU DESKTOP 2 ATIVO*/
-
 .menu-site-ativo {
+    display: none;
+}
+
+.menu-site-ativo.active {
+    display: block;
     font-family: 'Sora', sans-serif;
     position: absolute;
     height: 27.9rem;
@@ -248,50 +258,20 @@ input#buscar::placeholder {
 
 
 
-/* CONTEUDO*/
+/*------------------ CONTEUDO-------------------------------*/
 
+
+/* SEÇÃO 1 */
 #banner {
     display: block;
     width: 100%;
     border-bottom: 0.3rem solid var(--unnamed-color-71d8ff);
 }
 
-.navigation-2{  
-    height: 6.9rem;
-    align-items: center;
-    display: flex;
-    justify-content: space-between;
-    
-}
-.navigation-2 ul li a {
-    font-family: "ArcherPro Book", sans-serif;
-    text-transform: uppercase;
-    color: #FFFFFF;
-    font-size: 1.4rem;
-    padding: 0.4rem 0;
-    white-space: nowrap;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-
-
-.section-1 div.container {
-    position: relative;
-}
-
-
-
-
-.swiper-button-next::after, .swiper-button-prev::after {
-    color: var(--unnamed-color-005271);
-    font-size: 1.8rem;
-    
-}
+/* SEÇÃO 2 */
 
 #section-2{
-    margin: 12.3rem auto 7rem;
+    margin: 12rem auto 7rem;
     width: 100%;
     height: 36.4rem;
     display: flex;
@@ -299,39 +279,41 @@ input#buscar::placeholder {
     position: relative;
     
 }
+/* Botão carrossel 1 */
+
+.swiper-button-next::after, .swiper-button-prev::after {
+    color: var(--unnamed-color-005271);
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
 #section-2 .section-2-botoes {
     position: absolute;
     height: 5rem;
     width: 12rem;
-    text-align: left;
-    z-index: 3;
     top: -3rem;
     left: 41.6rem;
+ }
 
-}
-
+ /* -------------------------------- */   
 
 .section-2-initial {
     display: grid;
     grid-auto-flow: column;
-}
-.section-2-lado-esquerdo{
-    white-space: nowrap;
-    margin-right: 11rem;
+    gap: 11rem;
     position: relative;
+
 }
 
-.section-2-lado-esquerdo::after{
+.section-2-lado-esquerdo::before{
     content: '';
     position: absolute;
     top: 0;
-    right: -4rem;
+    left: 35rem;
     width: 1px;
     height: 100%;
     background-color: var(--unnamed-color-00aeef);
 }
-
-
 
 .title-h2 {
     font-size: 3.2rem;
@@ -353,11 +335,13 @@ input#buscar::placeholder {
     margin-top: 4rem;
 }
 
+/* Carrossel 1 */
+
 
 .section-2-lado-direito {
-   width: 100%;
+   display: flex;
+   max-width: 90rem;
 }
-
 
 .section-2-lado-direito-swiper div i{
     display: block;
@@ -425,7 +409,7 @@ input#buscar::placeholder {
 #produtos-nerd-web .swipeer .swiper-wrapper {
     display: grid;
     grid-auto-flow: column;
-
+  
     
 }
 
