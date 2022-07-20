@@ -21,18 +21,11 @@ a {
     text-decoration: none;
     color: black;
     transition: opacity 0.2s;
-
 }
 a:hover {
     opacity: 0.8;
 }
 
-
-.grid {
-    display: grid;
-    grid-auto-flow: column;
-    gap: 3rem;
-}
 
 li {
     list-style: none;
@@ -44,15 +37,6 @@ html {
 }
 
 :root {
-    /* tamanho de fontes: */
-
-    --font-size14rem: 1.4rem;
-    --font-size15rem: 1.5rem;
-    --font-size16rem: 1.6rem;
-    --font-size18rem: 1.8rem;
-    --font-size20rem: 2rem;
-    --font-size32rem: 3.2rem;
-
     /* Colors: */
     --unnamed-color-283137: #283137;
     --unnamed-color-033244: #033244;
@@ -72,19 +56,18 @@ body {
     
     max-width: 192rem;
     margin: auto;
-    font-size: var(--font-size16rem);  
+    font-size: 1.6rem;  
     
 }
 
 .container {
-    
     max-width: 132rem;
     width: 95%;
     margin: 0 auto;
 }
 
 .titulo-a {
-    font-size: var(--font-size14rem);
+    font-size: 1.4rem;
     background-color: var(--unnamed-color-71d8ff);
     text-transform: uppercase;
     font-family: 'Roboto Slab', serif;
@@ -93,7 +76,7 @@ body {
 }
 
 
-/* Cabeçalho: */
+/* MENU DESKTOP 1: */
 
 #logo {
     margin-right: 6rem;
@@ -109,90 +92,73 @@ body {
     display: flex;
     align-items: center;
 }
-
+#menu-option ul {
+    display: grid;
+    grid-auto-flow: column;
+    gap: 3rem;
+}
 #menu-option ul li a{
     color: #2C3A2F;
-    font-size: var(--font-size14rem);
+    font-size: 1.4rem;
     font-family: "ArcherPro Book", sans-serif;
    
 }
-#menu-direito div {
+#menu-direito {
+    display: grid;
+    grid-auto-flow: column;
+    gap: 3rem;
+}
+#menu-direito .menu-dia-a-dia {
     display: flex;
     align-items: center;
-}
-
-.menu-dia-a-dia {
-    cursor: pointer;
-}
-.dia-a-dia-title{
     text-transform: uppercase;
     font-size: 1.2rem;
-    font-family: "ArcherPro Bold"; 
-    
+    font-family: "ArcherPro Bold",sans-serif;
+    cursor: pointer;
+    white-space: nowrap;        
 }
 
-#menu-direito .icon-seta-down-solid{
-    margin-left: 0.6rem; 
-    white-space: nowrap;
-    display: block;
- 
-
+.icon-seta-down-solid{
+    margin-left: 1rem; 
 }
 
-.icon-find-search, .icon-times-solid-close, .icon-menu-bars-solid, .menu-toggle {
-    display: none;
-}
-
-
-/*CONTEUDO*/
-
-.section-1 {
+/* MENU DESKTOP 2: */
+#navigation-2{
     background-color: var(--unnamed-color-033244); 
-    border-top: 0.3rem solid var(--unnamed-color-71d8ff)
+    border-top: 0.3rem solid var(--unnamed-color-71d8ff)   
 }
-
-#banner {
-    display: block;
-    width: 100%;
-    border-bottom: 0.3rem solid var(--unnamed-color-71d8ff);
-}
-
-.navigation-2{  
-    height: 6.9rem;
+.lista-menu {
+    display: grid;
+    grid-auto-flow: column;
     align-items: center;
+    gap: 3rem;
+      
+}
+
+
+.lista-menu li a{
+    color: #FFFFFF;
+    font-size: 1.4rem;
+    font-family: "ArcherPro Book", sans-serif;
+    text-transform: uppercase; 
+}
+
+#segundo-menu {
+    height: 6.9rem;
     display: flex;
     justify-content: space-between;
-    
-}
-.navigation-2 ul li a {
-    font-family: "ArcherPro Book", sans-serif;
-    text-transform: uppercase;
-    color: #FFFFFF;
-    font-size: var(--font-size14rem);
-    padding: 0.4rem 0;
-    white-space: nowrap;
-    display: flex;
     align-items: center;
-    justify-content: center;
-}
-
-
-
-
-
-.section-1 div.container {
-    position: relative;
+   
 }
 
 #buscar {
-    max-width: 23.8rem;
     height: 4.2rem;
     border: 1px solid var(--unnamed-color-00aeef);
     outline: none;
     border-radius: 0.8rem;
     background-color: var(--unnamed-color-033244);
     color: var(--unnamed-color-b2eaff);
-    font-size: var(--font-size14rem);
+    font-size: 1.4rem;
     padding: 1.2rem 1.5rem;
     font-family: "ArcherPro Book", sans-serif;
 }
@@ -202,15 +168,13 @@ input#buscar::placeholder {
     opacity: .5;
 }
 
-/*MENU SITE ATIVO */
 
-.menu-sites{
-    display: none;
-}
 
-.section-1.active .menu-sites {
+
+/*MENU DESKTOP 2 ATIVO*/
+
+.menu-site-ativo {
     font-family: 'Sora', sans-serif;
-    display: block;
     position: absolute;
     height: 27.9rem;
     width: 120rem;
@@ -219,24 +183,6 @@ input#buscar::placeholder {
     background-color: #FFFFFF;
     z-index: 1;
    
-}
-
-.section-1 .navigation-2 ul li i {
-    margin-left: 0.9rem;
-    cursor: pointer;
-    color: #FFFFFF;    
-    white-space: nowrap;
- }
-
- .section-1 .navigation-2 .icon-seta-up-solid {
-     display: none;
- }
-
-.section-1.active .navigation-2 .icon-seta-up-solid {
-    display: inline-block;
-}
-.section-1.active .navigation-2 .icon-seta-down-solid {
-    display: none;
 }
 
 
@@ -252,7 +198,7 @@ input#buscar::placeholder {
 }
 
 #caixa-menu-sites div h2 {
-    font-size: var(--font-size18rem);
+    font-size: 1.8rem;
     color: var(--unnamed-color-005271);
     font-weight: 800;
     position: relative;
@@ -270,7 +216,7 @@ input#buscar::placeholder {
 }
 
 #caixa-menu-sites .div-1 ul li a {
-    font-size: var(--font-size14rem);
+    font-size: 1.4rem;
     font-weight: bold;
     color: var(--unnamed-color-033244);
     display: block;
@@ -291,7 +237,7 @@ input#buscar::placeholder {
 
 .div-2 ul li a, .div-3 ul li a, .div-4 ul li a {
     font-weight: normal;
-    font-size: var(--font-size14rem);
+    font-size: 1.4rem;
     display: block;
     margin-top: 0.8rem;
     white-space: nowrap;
@@ -299,9 +245,48 @@ input#buscar::placeholder {
 
 /*------------------- */
 
+
+
+
+/* CONTEUDO*/
+
+#banner {
+    display: block;
+    width: 100%;
+    border-bottom: 0.3rem solid var(--unnamed-color-71d8ff);
+}
+
+.navigation-2{  
+    height: 6.9rem;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.navigation-2 ul li a {
+    font-family: "ArcherPro Book", sans-serif;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    font-size: 1.4rem;
+    padding: 0.4rem 0;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.section-1 div.container {
+    position: relative;
+}
+
+
+
+
 .swiper-button-next::after, .swiper-button-prev::after {
     color: var(--unnamed-color-005271);
-    font-size: var(--font-size18rem);
+    font-size: 1.8rem;
     
 }
 
@@ -349,7 +334,7 @@ input#buscar::placeholder {
 
 
 .title-h2 {
-    font-size: var(--font-size32rem);
+    font-size: 3.2rem;
     font-family: 'Roboto Slab', serif;
     font-weight: 900;
 }
@@ -400,7 +385,7 @@ input#buscar::placeholder {
     font-family: 'Roboto Slab', serif;
     font-weight: 900;
     color: #101912;
-    font-size: var(--font-size16rem);
+    font-size: 1.6rem; 
     margin: 1.6rem auto 1.1rem;
 }
 
@@ -475,7 +460,7 @@ input#buscar::placeholder {
     color: #676767;
     font-family: 'Roboto Slab', serif;
     font-weight: 500;    
-    font-size: var(--font-size14rem);
+    font-size: 1.4rem;
     margin: 0 auto 1rem;
 }
 
@@ -505,14 +490,14 @@ input#buscar::placeholder {
 
 #section-4 div h3{
     color: var(--unnamed-color-033244);
-    font-size: var(--font-size32rem);
+    font-size: 3.2rem;
     font-weight: 900;
     margin-bottom: 2.4rem;
 }
 
 #section-4 div p {
     color: var(--unnamed-color-005271);
-    font-size: var(--font-size18rem);
+    font-size: 1.8rem;
     font-weight: bold;
     margin-right: 7.8rem;
     margin-bottom: 6rem;
@@ -522,7 +507,7 @@ input#buscar::placeholder {
     height: 3.9rem;
     display: inline-block;
     padding: 1rem 3.5rem;
-    font-size: var(--font-size14rem);
+    font-size: 1.4rem;
     font-weight: 900;
 
 }
@@ -540,7 +525,7 @@ input#buscar::placeholder {
    text-align: center;
    color: #2C3A2F;
    font-weight: 900;
-   font-size: var(--font-size32rem);
+   font-size: 3.2rem;
 
 }
 #section-5 .titulo-5 p {
@@ -594,14 +579,14 @@ input#buscar::placeholder {
 
 .secao-5-paragrafo {
     color: var(--unnamed-color-e2f7ff);
-    font-size: var(--font-size16rem);
+    font-size: 1.6rem; 
     font-weight: 200;
     margin-bottom: 4rem;
     
 }
 .secao-5-botao {
     color: var(--unnamed-color-00aeef);
-    font-size: var(--font-size14rem);
+    font-size: 1.4rem;
     font-weight: 800;
     text-transform: uppercase;
 }
@@ -647,7 +632,7 @@ left: 2rem;
 
 #section-6 div h3{
     color: #FFFFFF;
-    font-size: var(--font-size32rem);
+    font-size: 3.2rem;
     font-weight: 900;
     margin-bottom: 1.6rem;
     width: 55.1rem;
@@ -668,7 +653,7 @@ left: 2rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size:var(--font-size14rem);
+    font-size: 1.4rem;
     font-weight: 900;
     color: #FFFFFF;
     background-color: var(--unnamed-color-0089bc);
@@ -691,7 +676,7 @@ left: 2rem;
 }
 
 .section-7-titulo {
-    font-size: var(--font-size16rem);
+    font-size: 1.6rem; 
     font-weight: 900; 
     margin-bottom: 2.5rem;  
 }
@@ -755,7 +740,7 @@ left: 2rem;
 }
 #section-8 .section-8-esquerdo h2 {
     color: var(--unnamed-color-033244);
-    font-size: var(--font-size32rem);
+    font-size: 3.2rem;
     margin-bottom: 1.6rem;
     font-weight: 900;
 }
@@ -779,7 +764,7 @@ input#nome {
     outline: none;
     border: 1px solid #005271;
     background-color: transparent;
-    font-size: var(--font-size16rem);
+    font-size: 1.6rem; 
 }
 
 input#email {
@@ -791,11 +776,11 @@ input#email {
     outline: none;
     border: 1px solid #005271;
     background-color: transparent;
-    font-size: var(--font-size16rem);
+    font-size: 1.6rem; 
 }
 #nome::placeholder, #email::placeholder {
     color: var(--unnamed-color-005271);
-    font-size: var(--font-size16rem);
+    font-size: 1.6rem; 
     font: 300;
     font-family: 'Roboto Slab', serif;
     
@@ -839,7 +824,7 @@ footer {
 
 }
 .rodape-titulo {
-    font-size: var(--font-size18rem);
+    font-size: 1.8rem;
     color: var(--unnamed-color-e2f7ff);
     font-weight: 900;
     text-transform: uppercase;
@@ -847,14 +832,14 @@ footer {
 }
 .rodape-menu div a{
     color: var(--unnamed-color-00aeef);
-    font-size: var(--font-size14rem);
+    font-size: 1.4rem;
     font-style: 500;
     display: block;
     margin-bottom: 1rem;
 }
 .rodape-up div p {
     color: var(--unnamed-color-b2eaff);
-    font-size: var(--font-size14rem);
+    font-size: 1.4rem;
     font-style: 500;
     line-height: 2.2rem;
 
@@ -876,7 +861,7 @@ footer {
 }
 .rodape-down-esquerdo p{
     color: #E1E1E1;
-    font-size: var(--font-size14rem);
+    font-size: 1.4rem;
     font-weight: 400;
 }
 
@@ -897,334 +882,3 @@ footer {
 .rodape-down-direito ul li:hover {
     transform: translateY(0%);
 }
-
-
-@media (max-width: 1385px) {
-    #section-8 .section-8-esquerdo h2{
-        font-size: 3rem
-    }
-    #section-8 .section-8-esquerdo p {
-        font-size: 1.8rem;
-    }
-
-    .section-8-esquerdo {
-        margin-right: 4rem
-    }
-
-
-}
-@media (max-width: 1300px) {
-
-    #section-8 {
-        padding: 4.5rem 10.2rem 4.2rem 10.2rem;
-    }
-}
-
-@media (max-width: 1268px) {
-
-    #section-8 {
-        padding: 4.5rem 10rem 4.2rem 10rem;
-    }
-    #section-8 .section-8-esquerdo h2{
-        font-size: 2.8rem;
-    }
-    #section-8 .section-8-esquerdo p{
-        font-size: 1.6rem;
-    }
-}
-
-@media (max-width: 1250px) {
-
-    #section-8 {
-        padding: 4.5rem;
-    }
-}
-@media (max-width: 1222px) {
-    
-    .secao-5-paragrafo {
-        margin-bottom: 2rem;
-    }
-
-
-}
-
-
-@media (max-width: 1200px) {
-    .section-7-img-1, .section-7-img-2, .section-7-img-3 {
-        height: 15rem;
-        width: 15rem;
-    }
-    .section-7-titulo{
-        font-size: 1.45rem;
-    }
-    .section-7-paragrafo{
-        font-size: 1.35rem;
-    }
-    
-
-
-}
-@media (max-width: 1155px) {
-
-   
-    #section-7 {
-        display: block;
-        height: 100%;
-        margin: auto;
-    
-    }
-    #section-8 {
-        display: block;
-    }
-    .section-7-titulo {
-        font-size: 2.1rem;
-    }
-    .section-7-paragrafo {
-        font-size: 2rem;
-    }
-    .section-7-esquerdo {
-        width: 90%;
-    }
-    .section-7-direito {
-        display: flex;
-        justify-content: center;
-        padding: 2rem 0;
-        margin: 1rem;
-       
-    }
-    .section-7-img-1, .section-7-img-2, .section-7-img-3 {
-        height: 16rem;
-        width: 16rem;
-    }
-    #section-8 {
-      
-        height: 100%;
-        padding: 4rem;
-    }
-
-    #section-8 .section-8-esquerdo h2 {
-        font-size: 3.2rem;
-    }
-    #section-8 .section-8-esquerdo p {
-        font-size: 2rem;
-    }
-    .section-8-esquerdo {
-        width: 100%;
-        height: 100%;
-        text-align: center;
-      
-    }
-    .section-8-direito {
-        margin: 3.5rem auto;
-        
-    }
-  
-   
-    
-    .section-8-cadastrar {
-        margin-left: 0;
-       
-    }
-    .secao-5-paragrafo {
-        margin-bottom: 2rem;
-
-    }
-    #section-4 {
-        padding-left: 3.5rem;
-    }
-    #section-4 div{
-        padding-left: 0;
-
-    }
-    #section-6 div {
-        padding-left: 3.5rem;
-        margin: 0;
-    }
-
-
-}
-
-@media (max-width: 1125px) {
-    .rodape-menu {
-        gap: 5rem;
-    }
-}
-
-
-@media (max-width: 1100px) {
-    .rodape-menu {
-        gap: 4.5rem;
-    }
-    .secao-5-paragrafo{
-        font-size: 1.4rem;
-    }
-    .secao-5-titulo{
-        font-size: 1.8rem;
-    }
-}
-
-@media (max-width: 1065px) {
-
-}
-
-
-
-
-@media (max-width: 768px) {
-    .header {
-        width: 100%;
-        background-color: white;
-        height: 6.2rem;
-        position: fixed;
-        top: 0;
-        left: 0;
-        z-index: 4;
-        box-sizing: content-box;
-        box-shadow: 1px 5px 10px #00afef2a;
-       
-    }
-    #logo {
-        display: none;
-    }
-    .icon-menu-bars-solid {
-        display: block;
-    }
-    .navigation-1.active .icon-times-solid-close {
-        display: block;
-        position: absolute;
-        top: 10;
-        z-index: 11;
-        
-        
-    }
-
-    .navigation-1.active .menu-toggle {
-        display: grid;
-        grid-auto-flow: row;
-        position: fixed;
-        top: 0;
-        left: 0;
-        height: 100vh;
-        background-color: white;
-        width: 100%;
-        z-index: 10;
-        place-items: center;
-    }
-
-
-    .navigation-1.active .icon-menu-bars-solid {
-        display: none;
-        
-    }
-
-    #section-7{
-        display: block;
-        height: 100%;
-        margin-bottom: 7rem;
-    }
-    .section-7-esquerdo {
-        width: 90%;
-        margin: auto;
-    }
-    
-
-    .section-7-direito {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-bottom: 4rem;
-        
-    }
-   
-    #section-8 .section-8-esquerdo h2 {
-        font-size: 2.8rem;
-       
-    }
-
-    #section-8 .section-8-esquerdo p {
-        font-size: 1.7rem;
-       
-    }
-    .rodape-up {
-        margin: auto;
-        display: block;
-    }
-    #rodape-logo {
-        margin: auto;
-        display: none;
-        margin: 4rem auto;
-    }
-    .rodape-menu {
-        gap: 2rem;
-    }
-    .rodape-up div p{
-        font-size: 1.2rem;
-    }
-    .rodape-titulo {
-        font-size: 1.4rem;
-        font-weight: 700;
-
-    }
-    .rodape-down-direito p{
-        font-size: 1.4rem;
-        margin-bottom: 1rem;
-
-    }
-    .rodape-down-esquerdo p{
-        font-size: 1.2rem;
-    }
-    .secao-5-titulo {
-        font-size: 1.4rem;
-        font-weight: 600;
-
-    }
-    .secao-5-txt {
-        padding: 1.2rem;
-    }
-    .secao-5-paragrafo {
-        font-size: 1.3rem;
-
-    }
-    .secao-5-botao {
-        font-weight: 600;
-        
-    }
-    #section-6 div{
-        margin: auto;
-    }
-    #section-6 div h3 {
-        font-size: 3rem;
-
-    }
-    #section-6 div p{
-        font-size: 1.8rem;
-        font-weight: 400;
-    }
-    #buscar {
-        display: none;
-    }
-    .grid {
-        display: none;
-    }
-    .icon-find-search {
-        display: block;
-        margin-right: 3rem;
-        cursor: pointer;
-    }
-}
-
-@media (max-width: 425){
-    html {
-        font-size: 30%;
-    }
-    #section-2 .section-2-initial {
-        display: grid;
-        grid-auto-flow: row;
-        overflow: hidden;
-
-    }
-    #section-8 {
-        display: block;
-    }
-}
-

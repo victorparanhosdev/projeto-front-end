@@ -1,5 +1,5 @@
 
-const MenuSite = document.querySelectorAll('.section-1')
+const MenuSite = document.querySelectorAll('.menu-sites')
 const menuHamburguer = document.querySelectorAll(".navigation-1")
 
 

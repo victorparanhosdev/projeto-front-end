@@ -8,31 +8,31 @@
   <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
   <link rel="stylesheet" href="estilos.css" />
   <link rel="stylesheet" href="./assets/icomoon/style.css" />
+  <link rel="stylesheet" href="estilo.css" />
+  <!--FONTES-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;700;800&display=swap" rel="stylesheet">
+
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap"
-    rel="stylesheet" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600;700;800&display=swap"
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;500;700;900&display=swap"
     rel="stylesheet" />
 
   <title>NerdWeb</title>
 </head>
 
 <body>
-  <!--CABEÇALHO -->
-  <header class="header">
-    <!--MENU DESKTOP -->
+
+  <header>
+    <!--MENU DESKTOP 1 -->
     <nav class="navigation-1 container">
-      <div class="menu-toggle"></div>
+
       <div id="menu-esquerdo">
-            <i onclick="clicar()" class="toggle icon-times-solid-close"></i>
-            <i onclick="clicar()" class="toggle icon-menu-bars-solid"></i>        
-        <img id="logo" src="./assets/imagens/logo.png" alt="Logo-Marca"/>
+
+        <img id="logo" src="./assets/imagens/logo.png" alt="Logo-Marca" />
         <div id="menu-option">
-          <ul class="grid">
+          <ul>
             <li><a href="#nerdweb">Nerdweb</a></li>
             <li><a href="#servicos">Serviços</a></li>
             <li><a href="#blog">Blog</a></li>
@@ -40,78 +40,89 @@
           </ul>
         </div>
       </div>
-      <div class="grid" id="menu-direito">
+      <div id="menu-direito">
+
         <div class="menu-dia-a-dia">
-          <i class="icon-find-search"></i>
-          <a href="" class="dia-a-dia-title">Dia a Dia</a><i class="icon-seta-down-solid"></i>
+          <a href="#">Dia a Dia</a><i class="icon-seta-down-solid"></i>
         </div>
         <a href=""><i class="icon-menucontalogin"></i></a>
         <a href=""><i class="icon-shopping_cart_black_24dp"></i></a>
       </div>
     </nav>
+
+    <!--MENU DESKTOP 2 -->
+    <nav id="navigation-2">
+      <div id="segundo-menu" class="container">
+        <ul class="lista-menu">
+          <li onclick="openClose()">
+            <a href="#">Sites<i class="icon-seta-down-solid"></i></a>
+          </li>
+          <li><a href="#">Redes Sociais</a></li>
+          <li><a href="#">E-commerce</a></li>
+          <li><a href="#">Mídia Online</a></li>
+          <li><a href="#">Landing Pages</a></li>
+        </ul>
+        <div id="pesquisar">
+          <input type="search" name="buscar" id="buscar" placeholder="Digite sua pesquisa" />
+        </div>
+
+
+      </div>
+
+    </nav>
+
+    <!--MENU DESKTOP 2 ATIVO-->
+    <nav class="container">   
+    <div class="menu-site-ativo">
+      <div id="caixa-menu-sites">
+        <div class="div-1">
+          <h2>Soluções Site</h2>
+          <ul>
+            <li><a href="#">Briefing</a></li>
+            <li><a href="#">Briefing</a></li>
+            <li><a href="#">Criação</a></li>
+            <li><a href="#">Veiculação</a></li>
+          </ul>
+        </div>
+        <div class="div-2">
+          <h2>Soluções por E-commerce</h2>
+          <ul>
+            <li><a href="#">Lorem</a></li>
+            <li><a href="#">Ipsum</a></li>
+            <li><a href="#">Dolor</a></li>
+            <li><a href="#">Google Ads</a></li>
+            <li><a href="#">Analise de Mercado</a></li>
+          </ul>
+        </div>
+        <div class="div-3">
+          <h2>Soluções por Redes Sociais</h2>
+          <ul>
+            <li><a href="#">Briefing</a></li>
+            <li><a href="#">Briefing</a></li>
+            <li><a href="#">Criação</a></li>
+            <li><a href="#">Veiculação</a></li>
+          </ul>
+        </div>
+        <div class="div-4">
+          <h2>Soluções por Landing Page</h2>
+          <ul>
+            <li><a href="#">Conteúdo</a></li>
+            <li><a href="#">Relato</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+
   </header>
 
   <!--CONTEUDO-->
   <main>
     <section class="section-1">
       <div class="container">
-        <nav class="navigation-2">
-          <ul class="grid">
-            <li onclick="openClose()">
-              <a href="#">Sites<i class="icon-seta-down-solid"></i><i class="icon-seta-up-solid"></i></a>
-            </li>
-            <li><a href="#">Redes Sociais</a></li>
-            <li><a href="#">E-commerce</a></li>
-            <li><a href="#">Mídia Online</a></li>
-            <li><a href="#">Landing Pages</a></li>
-          </ul>
-          <div id="pesquisar">
-            <input type="search" name="buscar" id="buscar" placeholder="Digite sua pesquisa" />
-          </div>
-        </nav>
 
-        <!--Menu Site-->
-        <div class="menu-sites">
-          <div id="caixa-menu-sites">
-            <div class="div-1">
-              <h2>Soluções Site</h2>
-              <ul>
-                <li><a href="#">Briefing</a></li>
-                <li><a href="#">Briefing</a></li>
-                <li><a href="#">Criação</a></li>
-                <li><a href="#">Veiculação</a></li>
-              </ul>
-            </div>
-            <div class="div-2">
-              <h2>Soluções por E-commerce</h2>
-              <ul>
-                <li><a href="#">Lorem</a></li>
-                <li><a href="#">Ipsum</a></li>
-                <li><a href="#">Dolor</a></li>
-                <li><a href="#">Google Ads</a></li>
-                <li><a href="#">Analise de Mercado</a></li>
-              </ul>
-            </div>
-            <div class="div-3">
-              <h2>Soluções por Redes Sociais</h2>
-              <ul>
-                <li><a href="#">Briefing</a></li>
-                <li><a href="#">Briefing</a></li>
-                <li><a href="#">Criação</a></li>
-                <li><a href="#">Veiculação</a></li>
-              </ul>
-            </div>
-            <div class="div-4">
-              <h2>Soluções por Landing Page</h2>
-              <ul>
-                <li><a href="#">Conteúdo</a></li>
-                <li><a href="#">Relato</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-      <img id="banner" src="./assets/imagens/banner.png" alt="Banner" />
+
+        <img id="banner" src="./assets/imagens/banner.png" alt="Banner" />
     </section>
 
     <section class="container">
@@ -172,11 +183,11 @@
                 </p>
               </div>
             </div>
-            
+
           </div>
 
         </div>
-        
+
 
       </div>
 
@@ -191,7 +202,7 @@
         <div id="produtos-nerd-web">
 
           <div class="swipeer">
-            
+
             <div class="swiper-wrapper">
               <div class="swiper-slide">
                 <img src="./assets/imagens/PHONE.png" alt="" />
@@ -242,20 +253,20 @@
                 <img src="./assets/imagens/PHONE.png" alt="" />
                 <p>E-commerce</p>
               </div>
-              
+
               <div class="swiper-slide">
                 <img src="./assets/imagens/SHOP.png" alt="" />
                 <p>Redes</p>
               </div>
 
-              
+
             </div>
 
           </div>
           <div class="progressbar">
             <div class="swiper-pagination"></div>
           </div>
-         
+
 
 
         </div>
@@ -374,10 +385,10 @@
           </p>
         </div>
         <div class="section-8-direito">
-            <div class="form">
-              <input type="text" name="nome" id="nome" placeholder="Nome" />
-              <input type="email" name="email" id="email" placeholder="E-mail" />
-            </div>          
+          <div class="form">
+            <input type="text" name="nome" id="nome" placeholder="Nome" />
+            <input type="email" name="email" id="email" placeholder="E-mail" />
+          </div>
           <a class="titulo-a section-8-cadastrar" href="">Cadastrar</a>
         </div>
       </div>
