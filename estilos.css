@@ -342,27 +342,29 @@ input#buscar::placeholder {
    display: flex;
    max-width: 90rem;
 }
-
+.section-2-lado-direito-swiper {
+    display: grid;
+    grid-auto-flow: column;
+    gap: 2.3rem;
+}
 .section-2-lado-direito-swiper div i{
     display: block;
     text-align: center;
 }
 
 .card-1, .card-2, .card-3, .card-4, .card-5 {
-
-    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
-    border-radius: 3px;
-    width: 28.4rem;
+    border-radius: 0.3rem;
+    max-width: 28rem;
     height: 31.6rem;
     padding: 3rem;
-    margin: 0.2rem 0;
-    
+
 }
 
 .card-1:hover, .card-2:hover, .card-3:hover, .card-4:hover, .card-5:hover {
-    background-color: rgba(251, 251, 251, 0.731)
-}
+    background-color: var(--unnamed-color-e2f7ff);
+    border-radius: 2rem;
 
+}
 
 .carrossel-title{
     text-align: center;
@@ -380,6 +382,10 @@ input#buscar::placeholder {
     font-weight: 500;
     font-size: var(--font-size15rem);
 }
+
+
+
+/* SEÇÃO 3 */
 
 
 #section-3 h2 {

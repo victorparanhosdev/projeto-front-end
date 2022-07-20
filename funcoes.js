@@ -1,19 +1,4 @@
-
 const MenuSite = document.querySelectorAll('.menu-site-ativo')
-const menuHamburguer = document.querySelectorAll(".navigation-1")
-
-
-
-
-function clicar() {
-  for (let item of menuHamburguer){
-      item.classList.toggle('active')
-
-}
-  
-
-}
-
 
 function openClose() {
   
@@ -22,6 +7,7 @@ function openClose() {
         element.classList.toggle('active')
       }
 }
+
 
 
 const swiper = new Swiper('.swiper', {
