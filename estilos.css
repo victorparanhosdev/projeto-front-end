@@ -387,7 +387,7 @@ input#buscar::placeholder {
     font-family: 'Roboto Slab', serif;
     color: #101912;
     font-weight: 500;
-    font-size: var(--font-size15rem);
+    font-size: 1.5rem;;
 }
 
 
@@ -641,6 +641,8 @@ input#buscar::placeholder {
     background-color: var(--unnamed-color-0089bc);
 }
 
+/*--------SEÇÃO 7------*/
+
 #section-7 {
     margin: 8rem auto;
     display: flex;
@@ -648,22 +650,31 @@ input#buscar::placeholder {
     font-family: 'Roboto Slab', serif;
     height: 29.2rem;
     width: 100%;
+    position: relative;
+}
+#section-7::before {
+    content: '';
+    width: 100%;
+    background-color: var(--unnamed-color-00aeef);
+    height: 0.1rem;
+    position: absolute;
+    top: -1.5rem;
 }
 
 .section-7-esquerdo{
-    width: 53.6rem;
-    height: 23.1rem;
+    max-width: 53.6rem;
     margin: auto;
 
 }
 
 .section-7-titulo {
     font-size: 1.6rem; 
-    font-weight: 900; 
+    font-weight: bolder; 
     margin-bottom: 2.5rem;  
 }
 .section-7-paragrafo {
-    font-size: var(--font-size15rem);
+    font-size: 1.5rem;
+    font-weight: lighter;
 }
 
 .section-7-direito {
@@ -680,7 +691,7 @@ input#buscar::placeholder {
     height: 16rem;
     width: 16rem;
     border-radius: 50%;
-    border: 0.1rem solid;
+    border: 0.1rem solid rgba(0, 0, 0, 0.125);
     background-size: cover;
 }
 
@@ -690,7 +701,7 @@ input#buscar::placeholder {
     height: 16rem;
     width: 16rem;
     border-radius: 50%;
-    border: 0.1rem solid;
+    border: 0.1rem solid rgba(0, 0, 0, 0.125);
     background-size: cover;
 }
 
@@ -702,24 +713,27 @@ input#buscar::placeholder {
     height: 16rem;
     width: 16rem;
     border-radius: 50%;
-    border: 0.1rem solid;
+    border: 0.1rem solid rgba(0, 0, 0, 0.125);
 }
+
+
+
+/*--------SEÇÃO 8------*/
+
 
 #section-8 {
     margin-bottom: 10.5rem;
-    width: 100%;
-    height: 26.2rem;
     background-color: #F3F3F3;
-    padding: 4.5rem 11.2rem 4.2rem 11.2rem;
+    padding: 4.5rem 11.2rem;
     display: flex;
+    align-items: center;
+    justify-content: center;
     font-family: 'Roboto Slab', serif;
-   
 }
 .section-8-esquerdo {
-    width: 31.2rem;
-    height: 17.5rem;
-    margin-right: 11.2rem;
+    max-width: 31.2rem;
 }
+
 #section-8 .section-8-esquerdo h2 {
     color: var(--unnamed-color-033244);
     font-size: 3.2rem;
@@ -734,37 +748,35 @@ input#buscar::placeholder {
 
 .section-8-direito {
     margin: auto;
-
+    width: 67.2rem;
 }
 
 input#nome {
-    width: 67.2rem;
+    width: 100%;
     height: 4.4rem;
     margin-bottom: 1.5rem;
-    
     padding: 1.2rem 0 1.2rem 2.4rem ;
     outline: none;
-    border: 1px solid #005271;
+    border: 1px solid var(--unnamed-color-005271);
     background-color: transparent;
     font-size: 1.6rem; 
 }
 
 input#email {
-    width: 67.2rem;
+    width: 100%;
     height: 4.4rem;
     margin-bottom: 2.1rem;
-    display: block;
     padding: 1.2rem 0 1.2rem 2.4rem;
     outline: none;
-    border: 1px solid #005271;
+    border: 1px solid var(--unnamed-color-005271);
     background-color: transparent;
     font-size: 1.6rem; 
 }
 #nome::placeholder, #email::placeholder {
     color: var(--unnamed-color-005271);
     font-size: 1.6rem; 
-    font: 300;
-    font-family: 'Roboto Slab', serif;
+    font-weight: 300;
+    font-family: 'Roboto Slab', sans-serif;
     
 }
 
@@ -772,7 +784,7 @@ input#email {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 13.5rem;
+    max-width: 13.5rem;
     height: 4.5rem;
 
 }
@@ -780,9 +792,9 @@ input#email {
 /* RODAPÉ */
 
 footer {
-    border-top: 0.3rem solid var(--unnamed-color-0089bc);
+    border-top: 0.5rem solid var(--unnamed-color-0089bc);
     background-color: var(--unnamed-color-283137);
-    height: 46.1rem;
+    height: 46.3rem;
     font-family: 'Roboto Slab', serif;
 }
 #rodape {
