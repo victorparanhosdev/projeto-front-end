@@ -33,7 +33,7 @@ li {
 
 html {
     font-size: 62.5%;
-    /*scroll-behavior: smooth;*/
+    scroll-behavior: smooth;
 }
 
 .container {
@@ -74,7 +74,8 @@ body {
     max-width: 192rem;
     margin: auto;
     font-size: 1.6rem;  
-    
+
+   
 }
 
 
@@ -114,16 +115,27 @@ body {
 #menu-direito .menu-dia-a-dia {
     display: flex;
     align-items: center;
+    padding: 0.5rem;
     text-transform: uppercase;
     font-size: 1.2rem;
     font-family: "ArcherPro Bold",sans-serif;
     cursor: pointer;
-    white-space: nowrap;        
+    white-space: nowrap;      
 }
 
-.icon-seta-down-solid{
+#menu-direito .icon-seta-up-solid {
+    display: none;
+}
+#menu-direito .icon-seta-down-solid, #menu-direito .icon-seta-up-solid{
     margin-left: 1rem; 
 }
+#menu-direito .menu-dia-a-dia.active .icon-seta-up-solid {
+    display: block;    
+}
+#menu-direito .menu-dia-a-dia.active .icon-seta-down-solid{
+    display: none;
+}
+
 
 /* MENU DESKTOP 2: */
 
@@ -183,7 +195,7 @@ input#buscar::placeholder {
     display: none;
 }
 
-.menu-site-ativo.active {
+header.active .menu-site-ativo {
     display: block;
     font-family: 'Sora', sans-serif;
     position: absolute;
@@ -193,7 +205,23 @@ input#buscar::placeholder {
     border-top: 0.3rem solid var(--unnamed-color-71d8ff);
     background-color: #FFFFFF;
     z-index: 1;
-   
+}
+header nav div ul li.botao-sites .icon-seta-up-solid{
+    display: none;
+}
+
+header.active nav div ul li.botao-sites .icon-seta-up-solid{
+    display: inline-block;
+    margin-left: 1rem;
+}
+
+header nav div ul li.botao-sites .icon-seta-down-solid{
+    display: inline-block;
+    margin-left: 1rem;
+}
+
+header.active nav div ul li.botao-sites .icon-seta-down-solid{
+    display: none
 }
 
 
@@ -510,9 +538,9 @@ input#buscar::placeholder {
 /*--------SEÇÃO 5------*/
 
 #section-5{
-    margin: 8rem auto auto;
+    padding-top: 8rem;
+    margin: auto;
     width: 100%;
-    height: 58.1rem;
     font-family: 'Roboto Slab', sans-serif;
 }
 .titulo-5 {
@@ -520,6 +548,7 @@ input#buscar::placeholder {
 }
 
 #section-5 .titulo-5 h3 {
+    
    text-align: center;
    color: #2C3A2F;
    font-weight: 900;
@@ -722,7 +751,7 @@ input#buscar::placeholder {
 
 
 #section-8 {
-    margin-bottom: 10.5rem;
+    margin-bottom: 9rem;
     background-color: #F3F3F3;
     padding: 4.5rem 11.2rem;
     display: flex;
@@ -845,8 +874,7 @@ footer {
     display: flex;
     justify-content: space-between;
     position: relative;  
-    border: 1px solid red;
-    padding-bottom: 4.6rem;  
+    padding-bottom: 3.5rem;  
 }
 .rodape-down::before{
     content: "";
@@ -863,7 +891,6 @@ footer {
     font-weight: 500;
 }
 
-
 .rodape-down-direito p{
     color: var(--unnamed-color-71d8ff);
     margin-bottom: 2.5rem;
@@ -879,9 +906,36 @@ footer {
     transition: transform 0.4s;
     margin-right: 2.5rem;
     
-    
 }
 
 .rodape-down-direito ul li:hover {
     transform: translateY(-20%);
 }
+
+.subir-topo{
+
+    visibility: hidden;
+    opacity: 0;
+    position: fixed;
+    bottom: 3rem;
+    right: 3rem;
+    z-index: 5;
+    width: 5rem;
+    height: 5rem;
+    background: url('./assets/imagens/seta-up.png') no-repeat top center;
+    background-size: 4rem;
+    cursor: pointer;
+ 
+    transition: transform 0.3s;
+    transform: translateY(100%)
+
+}
+.subir-topo.show{
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+    
+}
+
+
+/*========= MEDIA QUERIES =========*/

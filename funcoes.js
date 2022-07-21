@@ -1,4 +1,11 @@
-const MenuSite = document.querySelectorAll('.menu-site-ativo')
+const MenuSite = document.querySelectorAll('header')
+const Diadia = document.querySelectorAll('#menu-direito .menu-dia-a-dia')
+
+function openDiaDia() {
+    for(let x of Diadia) {
+      x.classList.toggle('active')
+    }
+}
 
 function openClose() {
   
@@ -8,7 +15,19 @@ function openClose() {
       }
 }
 
+const backToTopButton = document.querySelector('.subir-topo')
 
+function backToTop() {
+  if (window.scrollY >= 670) {
+    backToTopButton.classList.add('show')
+  } else {
+    backToTopButton.classList.remove('show')
+  }
+}
+
+window.addEventListener('scroll', function() {
+  backToTop()
+})
 
 const swiper = new Swiper('.swiper', {
   

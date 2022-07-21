@@ -30,7 +30,7 @@
   </head>
 
   <body>
-    <header>
+    <header id="header">
       <!--MENU DESKTOP 1 -->
       <nav class="navigation-1 container">
         <div id="menu-esquerdo">
@@ -45,8 +45,8 @@
           </div>
         </div>
         <div id="menu-direito">
-          <div class="menu-dia-a-dia">
-            <a href="#">Dia a Dia</a><i class="icon-seta-down-solid"></i>
+          <div onclick="openDiaDia()" class="menu-dia-a-dia">
+            <a href="#">Dia a Dia</a><i class="icon-seta-down-solid"></i><i class="icon-seta-up-solid"></i>
           </div>
           <a href=""><i class="icon-menucontalogin"></i></a>
           <a href=""><i class="icon-shopping_cart_black_24dp"></i></a>
@@ -57,8 +57,8 @@
       <nav id="navigation-2">
         <div id="segundo-menu" class="container">
           <ul class="lista-menu">
-            <li onclick="openClose()">
-              <a href="#">Sites<i class="icon-seta-down-solid"></i></a>
+            <li class="botao-sites" onclick="openClose()">
+              <a href="#">Sites<i class="icon-seta-down-solid"></i><i class="icon-seta-up-solid"></i></a>
             </li>
             <li><a href="#">Redes Sociais</a></li>
             <li><a href="#">E-commerce</a></li>
@@ -131,7 +131,7 @@
       <section class="container">
         <div id="section-2">
           <!--Botão carrossel 1-->
-          <div class="section-2-botoes">
+          <div id="nerdweb" class="section-2-botoes">
             <div class="swiper-button-next"></div>
             <div class="swiper-button-prev"></div>
           </div>
@@ -288,7 +288,7 @@
 
       <!--SEÇÃO 5-->
 
-      <section class="container">
+      <section id="servicos" class="container">
         <div id="section-5">
           <div class="titulo-5">
             <h3>Seleção de Serviços</h3>
@@ -334,7 +334,7 @@
 
       <!--SEÇÃO 6-->
 
-      <section class="container">
+      <section id="blog" class="container">
         <div id="section-6">
           <div>
             <h3>Conheça a visão Nerdweb e entenda nossa história</h3>
@@ -386,8 +386,8 @@
 
       <section class="container">
         <div id="section-8">
-          <div class="section-8-esquerdo">
-            <h2>Novidades e descontos especiais</h2>
+          <div id="atendimento" class="section-8-esquerdo">
+            <h2 >Novidades e descontos especiais</h2>
             <p>
               Descubra com a gente uma vida nova, saudável, cheia de sabor e
               desconto!
@@ -447,7 +447,7 @@
           </div>
 
            <!--RODAPÈ 2 -->
-           
+
           <div class="rodape-down">
             <div class="rodape-down-esquerdo">
               <p>
@@ -494,6 +494,7 @@
         </div>
       </div>
     </footer>
+    <a href="#header" class="subir-topo"></a>
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script src="funcoes.js"></script>
   </body>
