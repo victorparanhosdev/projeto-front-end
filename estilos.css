@@ -345,7 +345,7 @@ header.active nav div ul li.botao-sites .icon-seta-down-solid{
     font-weight: 900;
 }
 #section-2 .section-2-lado-esquerdo h2 {
-        max-width: 32rem;
+    max-width: 32rem;
 }
 
 
@@ -371,19 +371,22 @@ header.active nav div ul li.botao-sites .icon-seta-down-solid{
    max-width: 90rem;
    width: 100%;
    height: 32rem;
-   overflow-x: hidden;
+   
+
    
   
 }
 .section-2-lado-direito-swiper {
     display: flex;
     gap: 2.3rem;
+  
     
     
 }
 .section-2-lado-direito-swiper div i{
     display: block;
     text-align: center;
+    
 }
 
 .card-1, .card-2, .card-3, .card-4, .card-5 {
@@ -393,6 +396,7 @@ header.active nav div ul li.botao-sites .icon-seta-down-solid{
     margin: auto;
     padding: 3rem;
     box-shadow: 0px 0px 10px #00000014;
+  
     
 
 }
@@ -1005,7 +1009,6 @@ footer {
     .section-2-initial {
         display: flex;
         flex-direction: column;
-        justify-content: center;
         align-items: center;
   
     }
@@ -1025,11 +1028,17 @@ footer {
         left: 38.5rem;
 
     }
-
     #section-2 .section-2-lado-esquerdo h2 {
-     
+       
     }
-
+    .section-2-lado-esquerdo {
+        width: ;
+        border: 1px solid red;
+    }
+    body {
+        border: 1px solid yellow;
+        width: 100%;
+    }
 
 }
 
