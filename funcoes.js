@@ -18,7 +18,7 @@ function openClose() {
 const backToTopButton = document.querySelector('.subir-topo')
 
 function backToTop() {
-  if (window.scrollY >= 570) {
+  if (window.scrollY >= 470) {
     backToTopButton.classList.add('show')
   } else {
     backToTopButton.classList.remove('show')
@@ -44,7 +44,10 @@ const swiper = new Swiper('.swiper', {
     320: {
       slidesPerView: 1,
     },
-    
+
+    768: {
+      slidesPerView: 3,
+    },
 
     1024: {
       slidesPerView: 2,
@@ -76,9 +79,16 @@ const swiperP = new Swiper('.swipeer', {
     320: {
       slidesPerView: 2,
     },
+
     768: {
       slidesPerView: 5,
     },
+
+    1024: {
+      slidesPerView: 7,
+
+    },
+
     1440: {
       slidesPerView: 9,
     },

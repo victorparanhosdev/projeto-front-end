@@ -344,6 +344,10 @@ header.active nav div ul li.botao-sites .icon-seta-down-solid{
     font-family: 'Roboto Slab', serif;
     font-weight: 900;
 }
+#section-2 .section-2-lado-esquerdo h2 {
+        max-width: 32rem;
+}
+
 
 .title-span {
     color: var(--unnamed-color-00aeef);
@@ -367,12 +371,14 @@ header.active nav div ul li.botao-sites .icon-seta-down-solid{
    max-width: 90rem;
    width: 100%;
    height: 32rem;
+   overflow-x: hidden;
    
   
 }
 .section-2-lado-direito-swiper {
     display: flex;
     gap: 2.3rem;
+    
     
 }
 .section-2-lado-direito-swiper div i{
@@ -944,6 +950,86 @@ footer {
     .secao-5-paragrafo {
         margin-bottom: 1.5rem;
     }
+    .div-4 {
+        margin-right: 5rem;
+    }
+    html {
+        font-size: 55%;
+    }
+    .secao-5-paragrafo {
+        font-size: 1.6rem;
+    }
+    .secao-5-titulo {
+        font-size: 1.8rem;
+    }
+    #section-8 .section-8-esquerdo h2 {
+        font-size: 3rem;
+    }
+    #section-4 {
+        padding: 0rem;
+    }
+    #section-4 div {
+        height: auto;
+    }
+    #rodape-logo{
+        display: none;
+    }
+    .rodape-up {
+        justify-content: space-around;
+
+    }
+
+}
+
+@media (max-width: 768px){
+    #section-7 {
+        display: block; 
+        height: 100%;
+        margin: 5rem auto;
+        
+    }
+    .section-7-esquerdo {
+        max-width: 95%;
+        margin-bottom: 3rem;
+        
+    }
+    .section-7-direito {
+        justify-content: space-evenly;
+        margin: auto;
+    }
+
+    .container{
+        width: 100%;
+    
+    }
+    .section-2-initial {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+  
+    }
+
+    .section-2-lado-esquerdo::before {
+        display: none;
+    }
+    #section-2 {
+        margin: 5rem auto;
+        height: 100%;
+        padding-bottom: 8rem;
+    
+    }
+    #section-2 .section-2-botoes {
+        bottom: 0;
+        top: auto;
+        left: 38.5rem;
+
+    }
+
+    #section-2 .section-2-lado-esquerdo h2 {
+     
+    }
+
 
 }
 
