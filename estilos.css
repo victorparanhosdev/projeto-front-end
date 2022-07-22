@@ -223,10 +223,10 @@ header.active nav div ul li.botao-sites .icon-seta-down-solid{
 
 
 #caixa-menu-sites {
-    padding: 2.8rem 22rem 5.5rem 16rem;
-    display: grid;
-    grid-auto-flow: column;
-    gap: 12rem;
+    padding: 3rem 0 5.5rem 0;
+    display: flex;
+    justify-content: space-around;
+    
   
 }
 
@@ -236,6 +236,7 @@ header.active nav div ul li.botao-sites .icon-seta-down-solid{
     font-weight: 800;
     position: relative;
     margin-bottom: 2.4rem;
+
 }
 
 #caixa-menu-sites div h2::after{
@@ -256,7 +257,17 @@ header.active nav div ul li.botao-sites .icon-seta-down-solid{
     margin-top: 0.8rem;
 }
 
+.div-1 {
+    max-width: 9rem;
+    margin-left: 5rem;
+}
 
+.div-2, .div-3, .div-4 {
+    max-width: 14rem;
+}
+.div-4 {
+    margin-right: 10rem;
+}
 
 .div-2 ul li a, .div-3 ul li a, .div-4 ul li a {
     font-weight: normal;
