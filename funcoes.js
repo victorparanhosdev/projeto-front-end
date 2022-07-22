@@ -18,7 +18,7 @@ function openClose() {
 const backToTopButton = document.querySelector('.subir-topo')
 
 function backToTop() {
-  if (window.scrollY >= 670) {
+  if (window.scrollY >= 570) {
     backToTopButton.classList.add('show')
   } else {
     backToTopButton.classList.remove('show')
