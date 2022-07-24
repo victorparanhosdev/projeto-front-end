@@ -53,6 +53,7 @@
 .icon-find-search:before {
   content: "\e900";
   font-size: 3rem;
+  color: #033244
 }
 .icon-menucontalogin:before {
   content: "\e901";
@@ -85,7 +86,8 @@
 }
 .icon-times-solid-close:before {
   content: "\e907";
-  font-size: 4rem;
+  font-size: 3rem;
+  color: #033244
 }
 .icon-seta-down-solid:before {
   content: "\e908";
