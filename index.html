@@ -44,6 +44,21 @@
             </ul>
           </div>
         </div>
+
+        <!--MENU MOBILE -->
+        <div class="menu-mobile">
+          <input type="search" name="buscar" id="buscar-mobile" class="buscar" placeholder="Digite sua pesquisa">
+          <i onclick="searchMobile()" class="icon-find-search"></i>
+          <i onclick="searchMobile()" class="icon-times-solid-close"></i>
+
+          <div onclick="menuMobile()" class="menu-hamburguer">
+            <div class="one"></div>
+            <div class="two"></div>
+            <div class="three"></div>
+          </div>
+          
+        </div>    
+
         <div id="menu-direito">
           <div onclick="openDiaDia()" class="menu-dia-a-dia">
             <a href="#">Dia a Dia</a><i class="icon-seta-down-solid"></i><i class="icon-seta-up-solid"></i>
@@ -69,7 +84,7 @@
             <input
               type="search"
               name="buscar"
-              id="buscar"
+              class="buscar"
               placeholder="Digite sua pesquisa"
             />
           </div>

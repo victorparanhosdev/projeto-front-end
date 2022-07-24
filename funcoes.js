@@ -1,6 +1,7 @@
 const MenuSite = document.querySelectorAll('header')
 const Diadia = document.querySelectorAll('#menu-direito .menu-dia-a-dia')
-
+const menu_Mobile = document.querySelectorAll('.menu-mobile')
+const naviGation = document.querySelectorAll('#navigation-2')
 function openDiaDia() {
     for(let x of Diadia) {
       x.classList.toggle('active')
@@ -13,6 +14,30 @@ function openClose() {
       for (let element of MenuSite) {
         element.classList.toggle('active')
       }
+}
+
+function menuMobile() {
+  
+  /*Abrir e fechar menu SITES */
+  for (let y of menu_Mobile) {
+    y.classList.toggle('show')
+
+  }
+  for (let z of naviGation) {
+    z.classList.toggle('show')
+
+  }
+
+ 
+
+}
+
+function searchMobile() {
+  for (let i of menu_Mobile) {
+    i.classList.toggle('search')
+
+  }
+
 }
 
 const backToTopButton = document.querySelector('.subir-topo')
