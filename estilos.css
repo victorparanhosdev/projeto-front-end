@@ -1584,7 +1584,7 @@
 
      .rodape-titulo {
         font-size: 2rem;
-        white-space: nowrap;
+        white-space: inherit;
      }
      #section-6 {
         background-size:cover;
@@ -1607,10 +1607,28 @@
     #section-2 .section-2-lado-esquerdo h2 {
         font-size: 3rem;
     }
+    #section-3 h2 {
+        font-size: 3rem;
+    }
+
+    #section-8 .section-8-esquerdo h2 {
+        font-size: 2.4rem;
+    }
+    #section-8 .section-8-esquerdo p {
+        font-size: 1.8rem;
+    }
+    .secao-5-titulo {
+        font-size: 2.8rem;
+    }
+
+
 
  }
 
  @media (max-width: 320px) {
+    html {
+        font-size: 42%
+    }
     .section-7-direito div {
         width: 10rem;
         height: 10rem;
@@ -1625,11 +1643,21 @@
       
     }
     #section-3 h2 {
+        font-size: 2.5rem;
         white-space: inherit;
     }
 
     .section-2-initial .title-span {
-        font-size: 2.3rem;
+        font-size: 2.2rem;
+    }
+    #navigation-2.show #segundo-menu ul li a {
+        font-size: 1.6rem;
+    }
+    header.active .menu-site-ativo {
+        left: 16rem;
+    }
+    #caixa-menu-sites div h2 {
+        font-size: 1.8rem;
     }
 
  }
