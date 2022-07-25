@@ -189,7 +189,7 @@
  }
 
  .menu-mobile.show .one {
-    transform: rotate(45deg) translate(5px, -1px);
+    transform: rotate(45deg) translate(6px, 0px);
  }
 
  .menu-mobile.show .two {
@@ -648,7 +648,6 @@
      padding-top: 8rem;
      margin: auto;
      width: 100%;
-     height: 1000px;
      font-family: 'Roboto Slab', sans-serif;
  }
 
@@ -677,14 +676,14 @@
      grid-auto-flow: column;
      gap: 2.4rem;
      width: 100%;
-     height: 46.2rem;
+     
  }
 
  .secao-5-card-1 {
      background: url("./assets/imagens/Imagem\ card\ serviço.png") no-repeat;
      max-width: 42.4rem;
      background-position: top center;
-     height: 100%;
+     height: 46.2rem;
      position: relative;
  }
 
@@ -692,7 +691,7 @@
      background: url("./assets/imagens/Imagem\ card\ serviço-1.png") no-repeat;
      max-width: 42.4rem;
      background-position: top center;
-     height: 100%;
+     height: 46.2rem;
      position: relative;
 
  }
@@ -701,7 +700,7 @@
      background: url("./assets/imagens/Imagem\ card\ serviço-2.png") no-repeat;
      max-width: 42.4rem;
      background-position: top center;
-     height: 100%;
+     height: 46.2rem;
      position: relative;
  }
 
@@ -1278,7 +1277,7 @@
      }
 
      html {
-         font-size: 43%;
+         font-size: 44%;
      }
 
      #banner {
@@ -1435,10 +1434,7 @@
          margin-bottom: 1.8rem;
      }
 
-     #section-5 .secao-5-cards {
-         display: block;
-      
-     }
+  
      .secao-5-titulo {
          font-size: 3rem;
      }
@@ -1449,8 +1445,8 @@
         height: auto;
      }
      .secao-5-card-1, .secao-5-card-2, .secao-5-card-3 {
-        height: 100%;
         max-width: 100%;
+        margin-bottom: 3rem;
      }
 
     .icon-find-search {
@@ -1496,8 +1492,47 @@
         height: 75%;
         font-size: 2rem;
      }
-     
+     #section-5 .secao-5-cards {
+        display: block;
 
+     }
+     .rodape-up {
+        display: grid;
+        place-items: center;
+
+
+     }
+     .rodape-up #rodape-logo {
+        display: block;
+        margin: 0rem auto 3rem;
+
+     }
+     .rodape-menu {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        padding: 0 5rem;
+     }
+     .rodape-down {
+        display: grid;
+        place-content: center;
+     }
+     .rodape-down-esquerdo p{
+        margin: 2rem 0;
+     }
+     .rodape-down-direito {
+        display: grid;
+        place-items: center;
+
+     }
+     .rodape-down-direito ul {
+        grid-auto-flow: column;
+        display: grid;
+        gap: 2rem;
+
+     }
+     .rodape-down-direito ul li{
+        margin: 0;
+     }
 
 
  }
