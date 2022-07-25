@@ -1238,7 +1238,7 @@
      }
 
      .rodape-down-direito p {
-         font-size: 1.8rem;
+         font-size: 2rem;
 
      }
 
@@ -1394,10 +1394,6 @@
          order: 2;
      }
 
-     .rodape-menu {
-         grid-auto-flow: row;
-     }
-
      #logo {
          margin: auto;
      }
@@ -1496,21 +1492,41 @@
         display: block;
 
      }
+     #rodape {
+        margin: 0;
+        padding: 2.5rem 0;
+
+     }
+
      .rodape-up {
         display: grid;
-        place-items: center;
-
-
+        padding: 2rem;
+        margin: 0;
      }
      .rodape-up #rodape-logo {
         display: block;
-        margin: 0rem auto 3rem;
+        margin: auto;
 
      }
      .rodape-menu {
         display: grid;
-        grid-template-columns: 1fr 2fr;
-        padding: 0 5rem;
+        grid-auto-flow: row;
+        margin: 4rem 0;
+        
+
+     }
+     body {
+        overflow-x: hidden;
+     }
+
+     .rodape-up div p {
+        font-size: 1.6rem;
+        text-align: center;
+        line-height: 2.6rem;
+     }
+
+     .rodape-menu div a {
+        font-size: 1.6rem
      }
      .rodape-down {
         display: grid;
@@ -1518,10 +1534,14 @@
      }
      .rodape-down-esquerdo p{
         margin: 2rem 0;
+        font-size: 1.7rem;
+        order: 2;
      }
      .rodape-down-direito {
         display: grid;
         place-items: center;
+        padding: 0;
+
 
      }
      .rodape-down-direito ul {
@@ -1533,44 +1553,17 @@
      .rodape-down-direito ul li{
         margin: 0;
      }
-     .section-7-img-1, .section-7-img-2, .section-7-img-3 {
-        height: 15rem;
-        width: 15rem;
-    }
+     .section-7-direito {
+        gap: 0;
+
+     }
 
 
  }
 
  @media (max-width: 375px) {
-    .secao-5-titulo{
-        font-size: 2.8rem;
-    }
-    .section-7-img-1, .section-7-img-2, .section-7-img-3 {
-        height: 14rem;
-        width: 14rem;
-    }
-    header.active .menu-site-ativo {
-        left: 20rem;
-    }
-    #section-3 h2 {
-        white-space: initial;
-    }
+   
     
 
  }
 
- @media (max-width: 320px) {
-    #section-3 h2{
-        font-size: 2.4rem;
-    }
-    #navigation-2.show #segundo-menu ul li a{
-        font-size: 1.7rem
-    }
-
-    header.active .menu-site-ativo {
-        left: 17rem;
-    }
-    
-
- }
- 
