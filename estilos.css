@@ -152,12 +152,13 @@
 
 
  /* MENU MOBILE: */
-.icon-find-search {
-    display: none;
+ .icon-find-search {
+     display: none;
 
  }
+
  .icon-times-solid-close {
-    display: none;
+     display: none;
  }
 
  #logo-mobile {
@@ -169,19 +170,19 @@
  }
 
  .menu-hamburguer {
-    cursor: pointer;
-    width: 4rem;
+     cursor: pointer;
+     width: 4rem;
 
  }
- 
+
  .one {
-    margin-top: 0.8rem;
-}
+     margin-top: 0.8rem;
+ }
 
  .one,
  .two,
  .three {
-    margin-bottom: 0.8rem;
+     margin-bottom: 0.8rem;
      width: 100%;
      height: 0.1rem;
      background-color: var(--unnamed-color-005271);
@@ -189,7 +190,7 @@
  }
 
  .menu-mobile.show .one {
-    transform: rotate(45deg) translate(6px, 0px);
+     transform: rotate(45deg) translate(6px, 0px);
  }
 
  .menu-mobile.show .two {
@@ -197,7 +198,7 @@
  }
 
  .menu-mobile.show .three {
-    transform: rotate(-45deg) translate(3.5px, 0px);
+     transform: rotate(-45deg) translate(3.5px, 0px);
 
  }
 
@@ -676,7 +677,7 @@
      grid-auto-flow: column;
      gap: 2.4rem;
      width: 100%;
-     
+
  }
 
  .secao-5-card-1 {
@@ -739,10 +740,11 @@
 
 
  /*--------SEÇÃO 6------*/
-#blog {
-    height: 40rem;
+ #blog {
+     height: 40rem;
 
-}
+ }
+
  #section-6 {
      margin: 8rem auto;
      background: url("./assets/imagens/BG\ CONHEÇA.png") no-repeat 100%;
@@ -1099,6 +1101,7 @@
 
      #section-4 {
          padding: 0rem;
+         background-size: cover;
      }
 
      #section-4 div {
@@ -1315,10 +1318,6 @@
          font-size: 3.5rem;
      }
 
-     #section-6 div {
-         padding: 3.5rem 7.8rem 1rem 3.5rem;
-     }
-
      #section-4 div h3,
      #section-4 div p {
          color: white;
@@ -1357,7 +1356,7 @@
          position: fixed;
          top: 6.4rem;
          z-index: 11;
-         left: 24rem;
+         left: 21rem;
          width: 100%;
          border-left: 0.3rem solid var(--unnamed-color-71d8ff);
          border-top: 0.3rem solid #ffffff00;
@@ -1386,6 +1385,16 @@
      header.active .menu-site-ativo #caixa-menu-sites .div-4 {
          max-width: 100%;
          margin: 4rem 0;
+     }
+     #caixa-menu-sites .div-1 ul li a {
+        font-size: 1.8rem
+     }
+     #caixa-menu-sites div h2 {
+        font-size: 2rem;
+     }
+
+     .div-2 ul li a, .div-3 ul li a, .div-4 ul li a {
+        font-size: 1.8rem;
      }
 
      #menu-esquerdo,
@@ -1430,140 +1439,197 @@
          margin-bottom: 1.8rem;
      }
 
-  
+
      .secao-5-titulo {
          font-size: 3rem;
      }
+
      .secao-5-botao {
          font-size: 1.5rem;
      }
+
      .secao-5-txt {
-        height: auto;
-     }
-     .secao-5-card-1, .secao-5-card-2, .secao-5-card-3 {
-        max-width: 100%;
-        margin-bottom: 3rem;
+         height: auto;
      }
 
-    .icon-find-search {
-        display: block;
-        order: 1;
-        cursor: pointer;
-    
+     .secao-5-card-1,
+     .secao-5-card-2,
+     .secao-5-card-3 {
+         max-width: 100%;
+         margin-bottom: 3rem;
+     }
+
+     .icon-find-search {
+         display: block;
+         order: 1;
+         cursor: pointer;
+
      }
 
      .navigation-1.search .icon-find-search {
-        display: none;
+         display: none;
      }
+
      .navigation-1.search .icon-times-solid-close {
-        display: block;
-    
+         display: block;
+
      }
+
      #searching {
-        display: none;
-       
+         display: none;
+
      }
 
      .navigation-1.search #searching {
-        position: fixed;
-        top: 0;
-        left: 0;
-        background-color: white;
-        width: 100%;
-        height: 6.2rem;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        z-index: 13;
-    
-    
+         position: fixed;
+         top: 0;
+         left: 0;
+         background-color: white;
+         width: 100%;
+         height: 6.2rem;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         z-index: 13;
+
+
      }
+
      #searching .icon-times-solid-close {
-        margin-right: 3rem;
+         margin-right: 3rem;
 
      }
 
      #buscar-mobile {
-        width: 80%;
-        height: 75%;
-        font-size: 2rem;
+         width: 80%;
+         height: 75%;
+         font-size: 2rem;
      }
+
      #section-5 .secao-5-cards {
-        display: block;
+         display: block;
 
      }
+
      #rodape {
-        margin: 0;
-        padding: 2.5rem 0;
+         margin: 0;
+         padding: 2.5rem 0;
 
      }
 
      .rodape-up {
-        display: grid;
-        padding: 2rem;
-        margin: 0;
+         display: grid;
+         padding: 0;
+         margin: 0;
      }
+
      .rodape-up #rodape-logo {
         display: block;
+        height: 100%;
+        width: auto;
         margin: auto;
 
      }
+
      .rodape-menu {
-        display: grid;
         grid-auto-flow: row;
-        margin: 4rem 0;
-        
+        margin: 4rem;
+        grid-template-columns: 1fr 2fr;
 
      }
-     body {
-        overflow-x: hidden;
-     }
+
 
      .rodape-up div p {
-        font-size: 1.6rem;
-        text-align: center;
-        line-height: 2.6rem;
+         font-size: 1.8rem;
+         line-height: 2.6rem;
+         font-weight: lighter;
      }
+
+
 
      .rodape-menu div a {
-        font-size: 1.6rem
+         font-size: 1.8rem
      }
+
      .rodape-down {
-        display: grid;
-        place-content: center;
+         display: grid;
+         place-content: center;
      }
-     .rodape-down-esquerdo p{
-        margin: 2rem 0;
-        font-size: 1.7rem;
-        order: 2;
+
+     .rodape-down-esquerdo p {
+         margin: 2rem 0;
+         font-size: 1.3rem;
+
      }
+
      .rodape-down-direito {
-        display: grid;
-        place-items: center;
-        padding: 0;
+         display: grid;
+         place-items: center;
+         padding: 0;
 
 
      }
+
      .rodape-down-direito ul {
-        grid-auto-flow: column;
-        display: grid;
-        gap: 2rem;
-
-     }
-     .rodape-down-direito ul li{
-        margin: 0;
-     }
-     .section-7-direito {
-        gap: 0;
+         grid-auto-flow: column;
+         display: grid;
+         gap: 2rem;
 
      }
 
+     .rodape-down-direito ul li {
+         margin: 0;
+     }
+
+
+     .rodape-titulo {
+        font-size: 2rem;
+        white-space: nowrap;
+     }
+     #section-6 {
+        background-size:cover;
+        height: auto;
+     }
+     #section-6 div, #section-4 div {
+        padding: 5rem 2rem;
+        margin: auto;
+     }
+     #blog {
+        height: auto;
+     }
+     #section-6 div p {
+        margin: 4rem 0;
+     }
 
  }
 
  @media (max-width: 375px) {
-   
-    
+    #section-2 .section-2-lado-esquerdo h2 {
+        font-size: 3rem;
+    }
 
  }
 
+ @media (max-width: 320px) {
+    .section-7-direito div {
+        width: 10rem;
+        height: 10rem;
+    }
+    .rodape-menu {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    .rodape-down-esquerdo p {
+        margin: 2rem 0;
+        font-size: 1.3rem;
+      
+    }
+    #section-3 h2 {
+        white-space: inherit;
+    }
+
+    .section-2-initial .title-span {
+        font-size: 2.3rem;
+    }
+
+ }
