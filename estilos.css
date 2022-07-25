@@ -1533,6 +1533,10 @@
      .rodape-down-direito ul li{
         margin: 0;
      }
+     .section-7-img-1, .section-7-img-2, .section-7-img-3 {
+        height: 15rem;
+        width: 15rem;
+    }
 
 
  }
@@ -1542,11 +1546,14 @@
         font-size: 2.8rem;
     }
     .section-7-img-1, .section-7-img-2, .section-7-img-3 {
-        height: 12rem;
-        width: 12rem;
+        height: 14rem;
+        width: 14rem;
     }
     header.active .menu-site-ativo {
         left: 20rem;
+    }
+    #section-3 h2 {
+        white-space: initial;
     }
     
 
