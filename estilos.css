@@ -1600,6 +1600,14 @@
      #section-6 div p {
         margin: 4rem 0;
      }
+     .section-7-direito {
+        display: flex;
+        height: 16rem;
+     }
+
+     .section-7-direito div {
+        height: 100%;
+     }
 
  }
 
@@ -1623,16 +1631,11 @@
 
 
 
+
  }
 
  @media (max-width: 320px) {
-    html {
-        font-size: 42%
-    }
-    .section-7-direito div {
-        width: 10rem;
-        height: 10rem;
-    }
+
     .rodape-menu {
         grid-template-columns: 1fr;
         text-align: center;
