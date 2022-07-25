@@ -25,9 +25,8 @@
 <body>
   <header id="header">
     <!--MENU DESKTOP 1 -->
-    <nav class="navigation-1 container">
+    <nav class="navigation-1 container search">
       <div id="menu-esquerdo">
-        <input type="search" name="buscar" id="buscar-mobile" class="buscar">
         <img id="logo" src="./assets/imagens/logo.png" alt="Logo-Marca" />
         <div id="menu-option">
           <ul>
@@ -42,19 +41,21 @@
       <!--MENU MOBILE -->
       <div class="menu-mobile">
 
+        <div id="searching">
+          <i onclick="searchMobile()" class="icon-times-solid-close"></i>
+          <input type="search" name="buscar" class="buscar" id="buscar-mobile" placeholder="Digite sua pesquisa">
+        </div>
+        <i onclick="searchMobile()" class="icon-find-search"></i>
+
         <div onclick="menuMobile()" class="menu-hamburguer">
           <div class="one"></div>
           <div class="two"></div>
           <div class="three"></div>
         </div>
-
       </div>
 
       <div id="menu-direito">
-        <i class="icon-find-search" onclick="searchMobile()"></i>
-        <i onclick="searchMobile()"class="icon-times-solid-close"></i>
         <div onclick="openDiaDia()" class="menu-dia-a-dia">
-          
           <a href="#">Dia a Dia</a><i class="icon-seta-down-solid"></i><i class="icon-seta-up-solid"></i>
         </div>
         <a href=""><i class="icon-menucontalogin"></i></a>
@@ -75,7 +76,7 @@
           <li><a href="#">Landing Pages</a></li>
         </ul>
         <div id="pesquisar">
-          <input type="search" name="buscar" class="buscar" placeholder="Digite sua pesquisa" />
+          <input type="search" name="buscar" class="buscar" placeholder="Digite sua pesquisa"/>
         </div>
       </div>
     </nav>
