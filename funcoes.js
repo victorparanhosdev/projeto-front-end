@@ -2,6 +2,7 @@ const MenuSite = document.querySelectorAll('header')
 const Diadia = document.querySelectorAll('#menu-direito .menu-dia-a-dia')
 const menu_Mobile = document.querySelectorAll('.menu-mobile')
 const naviGation = document.querySelectorAll('#navigation-2')
+const naviGation1 = document.querySelectorAll('.navigation-1')
 function openDiaDia() {
     for(let x of Diadia) {
       x.classList.toggle('active')
@@ -33,7 +34,7 @@ function menuMobile() {
 }
 
 function searchMobile() {
-  for (let i of menu_Mobile) {
+  for (let i of naviGation1) {
     i.classList.toggle('search')
 
   }
@@ -65,7 +66,11 @@ const swiper = new Swiper('.swiper', {
   },
 
   breakpoints: {
-  
+    
+    375: {
+      slidesPerView: 2,
+    },
+
     425: {
       slidesPerView: 2,
     },

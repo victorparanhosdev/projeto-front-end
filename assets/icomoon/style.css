@@ -83,10 +83,11 @@
 .icon-menu-bars-solid:before {
   content: "\e906";
   font-size: 2.5rem;
+  color: #005271;
 }
 .icon-times-solid-close:before {
   content: "\e907";
-  font-size: 3rem;
+  font-size: 2.8rem;
   color: #033244
 }
 .icon-seta-down-solid:before {

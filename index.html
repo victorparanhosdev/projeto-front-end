@@ -27,6 +27,7 @@
     <!--MENU DESKTOP 1 -->
     <nav class="navigation-1 container">
       <div id="menu-esquerdo">
+        <input type="search" name="buscar" id="buscar-mobile" class="buscar">
         <img id="logo" src="./assets/imagens/logo.png" alt="Logo-Marca" />
         <div id="menu-option">
           <ul>
@@ -40,8 +41,7 @@
 
       <!--MENU MOBILE -->
       <div class="menu-mobile">
-        <i onclick="searchMobile()" class="icon-times-solid-close" ></i>
-        <i onclick="searchMobile()" class="icon-find-search"></i>
+
         <div onclick="menuMobile()" class="menu-hamburguer">
           <div class="one"></div>
           <div class="two"></div>
@@ -51,7 +51,10 @@
       </div>
 
       <div id="menu-direito">
+        <i class="icon-find-search" onclick="searchMobile()"></i>
+        <i onclick="searchMobile()"class="icon-times-solid-close"></i>
         <div onclick="openDiaDia()" class="menu-dia-a-dia">
+          
           <a href="#">Dia a Dia</a><i class="icon-seta-down-solid"></i><i class="icon-seta-up-solid"></i>
         </div>
         <a href=""><i class="icon-menucontalogin"></i></a>
