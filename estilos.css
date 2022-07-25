@@ -1545,6 +1545,25 @@
         height: 12rem;
         width: 12rem;
     }
+    header.active .menu-site-ativo {
+        left: 20rem;
+    }
+    
+
+ }
+
+ @media (max-width: 320px) {
+    #section-3 h2{
+        font-size: 2.4rem;
+    }
+    #navigation-2.show #segundo-menu ul li a{
+        font-size: 1.7rem
+    }
+
+    header.active .menu-site-ativo {
+        left: 17rem;
+    }
+    
 
  }
  
