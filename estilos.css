@@ -266,7 +266,7 @@
      display: block;
      font-family: 'Sora', sans-serif;
      position: absolute;
-     border-top: 0.3rem solid var(--unnamed-color-71d8ff);
+     border-top: 0.1rem solid var(--unnamed-color-71d8ff);
      background-color: #FFFFFF;
      z-index: 1;
 
@@ -1076,6 +1076,13 @@
 
  /*========= MEDIA QUERIES =========*/
  @media (max-width: 1024px) {
+    .card-1, .card-2, .card-3, .card-4, .card-5 {
+        max-width: 20rem;
+        padding: 1rem;
+    }
+    .section-2-paragrafo{
+        font-size: 1.3rem;
+    }
      .secao-5-paragrafo {
          margin-bottom: 1.5rem;
      }
@@ -1265,6 +1272,13 @@
          z-index: 10;
          padding: 0 2rem;
      }
+     .card-1, .card-2, .card-3, .card-4, .card-5 {
+        max-width: 25.5rem;
+        padding: 1rem;
+     }
+     .section-2-paragrafo {
+        margin-bottom: 1rem;
+     }
 
 
  }
@@ -1274,7 +1288,9 @@
     body.main #menu-direito {
         display: none;
     }
-
+    #navigation-2.show #segundo-menu #pesquisar {
+        display: none;
+    }
 
 
      .container {
@@ -1282,9 +1298,11 @@
      }
      header.active .botao-sites {
         border-left: 0.5rem solid var(--unnamed-color-b2eaff);
+
      }
 
-     #pesquisar,
+  
+
      #menu-option,
      #segundo-menu {
          display: none;
@@ -1342,9 +1360,9 @@
         display: block;
         width: 100%;
         left: 0;
-        margin-top: 5.9rem;
+        margin-top: 6.2rem;
         z-index: 10;
-        top: 0.4rem;
+        top: 0;
      }
 
      #navigation-2.show #segundo-menu ul {
@@ -1662,6 +1680,10 @@
     #caixa-menu-sites div h2 {
         font-size: 1.8rem;
     }
+    .card-1, .card-2, .card-3, .card-4, .card-5 {
+        max-width: 24.4rem;
+        padding: 1rem 1rem 2rem 1rem;
+    }
 
 
 
@@ -1683,13 +1705,13 @@
         font-size: 2.5rem;
         white-space: inherit;
     }
-
+    #section-2 .section-2-lado-esquerdo h2 {
+        font-size: 2.9rem;
+    }
     .section-2-initial .title-span {
-        font-size: 2.2rem;
+        font-size: 2rem;
     }
-    #navigation-2.show #segundo-menu ul li a {
-        font-size: 1.6rem;
-    }
+
     header.active .menu-site-ativo {
         left: 16rem;
     }
@@ -1699,6 +1721,18 @@
     #caixa-menu-sites .div-1 ul li a, .div-2 ul li a, .div-3 ul li a, .div-4 ul li a {
         font-size: 1.5rem;
     }
+    #navigation-2.show #segundo-menu ul li a {
+        font-size: 1.5rem;
+    }
+    .card-1, .card-2, .card-3, .card-4, .card-5 {
+        max-width: 20rem;
+        padding: 1rem;
+    }
+    .section-2-paragrafo {
+        font-size: 1.4rem;
+    }
+
+
  
 
  }
