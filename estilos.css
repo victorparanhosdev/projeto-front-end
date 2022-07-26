@@ -1166,7 +1166,7 @@
      #section-2 .section-2-botoes {
          bottom: 0;
          top: auto;
-         left: 38.5rem;
+         left: 0;
      }
 
      #section-2 .section-2-lado-esquerdo {
@@ -1352,6 +1352,19 @@
      #navigation-2.show #segundo-menu ul li a {
          font-size: 1.7rem;
      }
+     header.active .menu-mobile.show,  header.active #menu-direito {
+        display: none;
+     }
+
+     .menu-mobile.show .icon-find-search{
+        display: none;
+
+     }
+     header.active .navigation-1.container {
+        justify-content: center;
+     }
+
+     header.active .icon-find-search,
 
      header.active .menu-site-ativo {
          position: fixed;
