@@ -1657,6 +1657,16 @@
 
  }
 
+ @media (max-width: 414px) {
+
+    .card-1, .card-2, .card-3, .card-4, .card-5 {
+        max-width: 27.5rem;
+
+    }
+
+    
+ }
+
  @media (max-width: 375px) {
     #section-2 .section-2-lado-esquerdo h2 {
         font-size: 3rem;
@@ -1729,7 +1739,7 @@
         padding: 1rem;
     }
     .section-2-paragrafo {
-        font-size: 1.4rem;
+        font-size: 1.2rem;
     }
 
 
