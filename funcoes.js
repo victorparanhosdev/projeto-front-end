@@ -35,9 +35,11 @@ function menuMobile() {
 
   if (show) {
     document.body.style.overflow = "hidden"
+    document.body.classList.add('main')
     show = false;
   } else {
     document.body.style.overflow = "initial"
+    document.body.classList.remove('main')
     show = true;
 
   }

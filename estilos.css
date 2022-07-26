@@ -1270,8 +1270,23 @@
  }
 
  @media (max-width: 425px) {
+
+    body.main #main{
+        opacity: 0.3;
+
+    }
+
+    body.main #menu-direito {
+        display: none;
+    }
+
+
+
      .container {
          width: 100%;
+     }
+     header.active .botao-sites {
+        border-left: 0.5rem solid var(--unnamed-color-b2eaff);
      }
 
      #pesquisar,
@@ -1323,17 +1338,18 @@
      #section-4 div p {
          color: white;
      }
+   
 
      #navigation-2.show #segundo-menu {
-         background-color: var(--unnamed-color-033244);
-         height: 100vh;
-         position: fixed;
-         display: block;
-         width: 100%;
-         right: 0;
-         margin-top: 6.2rem;
-         z-index: 10;
-         top: 0.4rem;
+        background-color: var(--unnamed-color-033244);
+        height: 50vh;
+        position: fixed;
+        display: block;
+        width: 50vw;
+        left: 0;
+        margin-top: 5.9rem;
+        z-index: 10;
+        top: 0.4rem;
      }
 
      #navigation-2.show #segundo-menu ul {
@@ -1361,19 +1377,18 @@
 
      }
      header.active .navigation-1.container {
-        justify-content: center;
+        justify-content: end;
      }
-
-     header.active .icon-find-search,
+     #navigation-2.show #segundo-menu ul {
+        position: relative;
+     }
 
      header.active .menu-site-ativo {
          position: fixed;
-         top: 6.4rem;
+         top: 6.2rem;
          z-index: 11;
          left: 17rem;
          width: 100%;
-         border-left: 0.3rem solid var(--unnamed-color-71d8ff);
-         border-top: 0.3rem solid #ffffff00;
          height: 100vh;
     
          
