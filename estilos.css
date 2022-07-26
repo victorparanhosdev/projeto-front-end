@@ -269,6 +269,7 @@
      border-top: 0.3rem solid var(--unnamed-color-71d8ff);
      background-color: #FFFFFF;
      z-index: 1;
+
  }
 
  header nav div ul li.botao-sites .icon-seta-up-solid {
@@ -1349,18 +1350,20 @@
      }
 
      #navigation-2.show #segundo-menu ul li a {
-         font-size: 2rem;
+         font-size: 1.7rem;
      }
 
      header.active .menu-site-ativo {
          position: fixed;
          top: 6.4rem;
          z-index: 11;
-         left: 21rem;
+         left: 17rem;
          width: 100%;
          border-left: 0.3rem solid var(--unnamed-color-71d8ff);
          border-top: 0.3rem solid #ffffff00;
          height: 100vh;
+    
+         
 
      }
 
@@ -1607,6 +1610,8 @@
 
      .section-7-direito div {
         height: 100%;
+        background-size: 100%;
+        background-position: center;
      }
 
  }
@@ -1627,6 +1632,12 @@
     }
     .secao-5-titulo {
         font-size: 2.8rem;
+    }
+    #caixa-menu-sites .div-1 ul li a, .div-2 ul li a, .div-3 ul li a, .div-4 ul li a {
+        font-size: 1.7rem;
+    }
+    #caixa-menu-sites div h2 {
+        font-size: 1.8rem;
     }
 
 
@@ -1660,7 +1671,11 @@
         left: 16rem;
     }
     #caixa-menu-sites div h2 {
-        font-size: 1.8rem;
+        font-size: 1.7rem;
     }
+    #caixa-menu-sites .div-1 ul li a, .div-2 ul li a, .div-3 ul li a, .div-4 ul li a {
+        font-size: 1.5rem;
+    }
+ 
 
  }

@@ -3,6 +3,7 @@ const Diadia = document.querySelectorAll('#menu-direito .menu-dia-a-dia')
 const menu_Mobile = document.querySelectorAll('.menu-mobile')
 const naviGation = document.querySelectorAll('#navigation-2')
 const naviGation1 = document.querySelectorAll('.navigation-1')
+
 function openDiaDia() {
     for(let x of Diadia) {
       x.classList.toggle('active')
@@ -17,18 +18,30 @@ function openClose() {
       }
 }
 
+let show = true;
+
 function menuMobile() {
   
   /*Abrir e fechar menu SITES */
   for (let y of menu_Mobile) {
     y.classList.toggle('show')
-
+   
   }
+
   for (let z of naviGation) {
     z.classList.toggle('show')
 
   }
 
+  if (show) {
+    document.body.style.overflow = "hidden"
+    show = false;
+  } else {
+    document.body.style.overflow = "initial"
+    show = true;
+
+  }
+  
  
 
 }
@@ -44,7 +57,7 @@ function searchMobile() {
 const backToTopButton = document.querySelector('.subir-topo')
 
 function backToTop() {
-  if (window.scrollY >= 470) {
+  if (window.scrollY >= 370) {
     backToTopButton.classList.add('show')
   } else {
     backToTopButton.classList.remove('show')
