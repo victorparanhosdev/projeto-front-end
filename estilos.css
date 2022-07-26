@@ -1664,6 +1664,16 @@
 
     }
 
+
+ }
+
+ @media (max-width: 390px) {
+
+    .card-1, .card-2, .card-3, .card-4, .card-5 {
+        max-width: 25.5rem;
+
+    }
+
     
  }
 
